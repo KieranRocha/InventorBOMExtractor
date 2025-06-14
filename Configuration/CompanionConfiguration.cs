@@ -3,7 +3,7 @@ namespace InventorBOMExtractor.Configuration
 {
     public class CompanionSettings
     {
-        public string ApiBaseUrl { get; set; } = "http://localhost:5000";
+        public string ApiBaseUrl { get; set; } = "http://localhost:5001";
         public int CycleIntervalMs { get; set; } = 30000; // 30 segundos
         public int ErrorRetryDelayMs { get; set; } = 10000; // 10 segundos
         public bool EnableDetailedLogging { get; set; } = true;

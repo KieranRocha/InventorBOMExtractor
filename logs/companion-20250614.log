@@ -259,3 +259,156 @@ System.Net.Http.HttpRequestException: Este host não é conhecido. (api.empresa.
 2025-06-14 15:20:48.208 -03:00 [INF] ✅ Work-Driven Monitoring parado
 2025-06-14 15:20:48.209 -03:00 [INF] ✅ Work-Driven Monitoring parado
 2025-06-14 15:20:48.210 -03:00 [INF] ✅ Companion Service parado
+2025-06-14 15:52:05.850 -03:00 [INF] === COMPANION SERVICE STEP 2 INICIANDO ===
+2025-06-14 15:52:05.966 -03:00 [INF] Executando em modo CONSOLE
+2025-06-14 15:52:06.013 -03:00 [INF] 🚀 Companion Service STEP 2 INICIANDO...
+2025-06-14 15:52:06.014 -03:00 [INF] Configurações: API=https://api.empresa.com, Interval=30000ms
+2025-06-14 15:52:06.015 -03:00 [INF] === COMPANION SERVICE EXECUTANDO ===
+2025-06-14 15:52:06.017 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-14 15:52:06.021 -03:00 [INF] Hosting environment: Production
+2025-06-14 15:52:06.022 -03:00 [INF] Content root path: C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor
+2025-06-14 15:52:11.014 -03:00 [INF] 🔥 Work-Driven Monitoring iniciando...
+2025-06-14 15:52:11.017 -03:00 [ERR] Inventor não conectado - não é possível subscrever eventos
+2025-06-14 15:52:11.019 -03:00 [ERR] ❌ Falha ao subscrever eventos do Inventor
+2025-06-14 15:52:11.020 -03:00 [INF] ✅ Work-Driven Monitoring iniciado
+2025-06-14 15:52:11.021 -03:00 [INF] Tentando conectar ao Inventor...
+2025-06-14 15:52:11.022 -03:00 [INF] Tentando conectar ao Inventor...
+2025-06-14 15:52:11.821 -03:00 [INF] ✓ Conectado ao Inventor 2023
+2025-06-14 15:52:11.865 -03:00 [INF] Start processing HTTP request POST https://api.empresa.com/api/companion/heartbeat
+2025-06-14 15:52:11.870 -03:00 [INF] Sending HTTP request POST https://api.empresa.com/api/companion/heartbeat
+2025-06-14 15:52:11.960 -03:00 [ERR] Erro ao enviar heartbeat para API
+System.Net.Http.HttpRequestException: Este host não é conhecido. (api.empresa.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Este host não é conhecido.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendHeartbeatAsync(CompanionHeartbeat heartbeat) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 62
+2025-06-14 15:52:41.986 -03:00 [INF] Start processing HTTP request POST https://api.empresa.com/api/companion/heartbeat
+2025-06-14 15:52:41.988 -03:00 [INF] Sending HTTP request POST https://api.empresa.com/api/companion/heartbeat
+2025-06-14 15:52:41.998 -03:00 [ERR] Erro ao enviar heartbeat para API
+System.Net.Http.HttpRequestException: Este host não é conhecido. (api.empresa.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Este host não é conhecido.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendHeartbeatAsync(CompanionHeartbeat heartbeat) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 62
+2025-06-14 15:53:12.023 -03:00 [INF] Start processing HTTP request POST https://api.empresa.com/api/companion/heartbeat
+2025-06-14 15:53:12.025 -03:00 [INF] Sending HTTP request POST https://api.empresa.com/api/companion/heartbeat
+2025-06-14 15:53:12.036 -03:00 [ERR] Erro ao enviar heartbeat para API
+System.Net.Http.HttpRequestException: Este host não é conhecido. (api.empresa.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Este host não é conhecido.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendHeartbeatAsync(CompanionHeartbeat heartbeat) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 62
+2025-06-14 15:53:24.299 -03:00 [INF] Application is shutting down...
+2025-06-14 15:53:24.301 -03:00 [INF] 🔴 Companion Service parando...
+2025-06-14 15:53:24.302 -03:00 [INF] 🔴 Work-Driven Monitoring parando...
+2025-06-14 15:53:24.304 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-14 15:53:24.306 -03:00 [INF] Service cancelado - parando...
+2025-06-14 15:53:24.307 -03:00 [INF] 🔴 Work-Driven Monitoring parando...
+2025-06-14 15:53:24.308 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-14 15:53:24.308 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-14 15:53:24.310 -03:00 [INF] ✅ Companion Service parado
+2025-06-14 15:57:25.480 -03:00 [INF] === COMPANION SERVICE STEP 2 INICIANDO ===
+2025-06-14 15:57:25.603 -03:00 [INF] Executando em modo CONSOLE
+2025-06-14 15:57:25.654 -03:00 [INF] 🚀 Companion Service STEP 2 INICIANDO...
+2025-06-14 15:57:25.655 -03:00 [INF] Configurações: API=https://localhost:5001, Interval=30000ms
+2025-06-14 15:57:25.656 -03:00 [INF] === COMPANION SERVICE EXECUTANDO ===
+2025-06-14 15:57:25.659 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-14 15:57:25.663 -03:00 [INF] Hosting environment: Production
+2025-06-14 15:57:25.665 -03:00 [INF] Content root path: C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor
+2025-06-14 15:57:30.673 -03:00 [INF] 🔥 Work-Driven Monitoring iniciando...
+2025-06-14 15:57:30.683 -03:00 [ERR] Inventor não conectado - não é possível subscrever eventos
+2025-06-14 15:57:30.685 -03:00 [ERR] ❌ Falha ao subscrever eventos do Inventor
+2025-06-14 15:57:30.687 -03:00 [INF] ✅ Work-Driven Monitoring iniciado
+2025-06-14 15:57:30.689 -03:00 [INF] Tentando conectar ao Inventor...
+2025-06-14 15:57:30.691 -03:00 [INF] Tentando conectar ao Inventor...
+2025-06-14 15:57:31.493 -03:00 [INF] ✓ Conectado ao Inventor 2023
+2025-06-14 15:57:31.540 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/companion/heartbeat
+2025-06-14 15:57:31.544 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/companion/heartbeat
+2025-06-14 15:57:35.646 -03:00 [ERR] Erro ao enviar heartbeat para API
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendHeartbeatAsync(CompanionHeartbeat heartbeat) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 62
+2025-06-14 15:58:05.688 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/companion/heartbeat
+2025-06-14 15:58:05.689 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/companion/heartbeat
+2025-06-14 15:58:09.733 -03:00 [ERR] Erro ao enviar heartbeat para API
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendHeartbeatAsync(CompanionHeartbeat heartbeat) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 62
+2025-06-14 15:58:13.787 -03:00 [INF] Application is shutting down...
+2025-06-14 15:58:13.789 -03:00 [INF] 🔴 Companion Service parando...
+2025-06-14 15:58:13.791 -03:00 [INF] 🔴 Work-Driven Monitoring parando...
+2025-06-14 15:58:13.794 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-14 15:58:13.796 -03:00 [INF] Service cancelado - parando...
+2025-06-14 15:58:13.797 -03:00 [INF] 🔴 Work-Driven Monitoring parando...
+2025-06-14 15:58:13.798 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-14 15:58:13.798 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-14 15:58:13.800 -03:00 [INF] ✅ Companion Service parado
