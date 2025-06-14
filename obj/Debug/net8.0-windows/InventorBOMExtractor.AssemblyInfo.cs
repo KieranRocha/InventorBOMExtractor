@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2025")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bbe55b06034d2a39e54567a4133fd88995f4201")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7530856f6dad9bc3120bf612ad38a0f1e8e67ce1")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventorBOMExtractor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inventor Companion Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

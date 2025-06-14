@@ -98,8 +98,8 @@ namespace InventorBOMExtractor.Models
         
         // Metadata agregado
         public int TotalItems => BOMItems.Count;
-        public double TotalMass => BOMItems.Sum(b => b.Quantity * (b.Mass ?? 0));
-        public double TotalVolume => BOMItems.Sum(b => b.Quantity * (b.Volume ?? 0));
+        public double TotalMass => BOMItems.Sum(b => b.Quantity * (b.Mass ?? 0.0));
+        public double TotalVolume => BOMItems.Sum(b => b.Quantity * (b.Volume ?? 0.0));
         public string InventorVersion { get; set; } = string.Empty;
     }
 }

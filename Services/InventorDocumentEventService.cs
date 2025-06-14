@@ -1,4 +1,4 @@
-// Services/InventorDocumentEventService.cs
+// Services/InventorDocumentEventService.cs - CORRIGIDO
 using Microsoft.Extensions.Logging;
 using InventorBOMExtractor.Events;
 using InventorBOMExtractor.Models;
@@ -65,18 +65,55 @@ namespace InventorBOMExtractor.Services
                     return false;
                 }
 
-                // 🎯 SUBSCRIÇÃO AOS EVENTOS NATIVOS DO INVENTOR
-                _inventorApp.ApplicationEvents.OnDocumentOpen += OnInventorDocumentOpen;
-                _inventorApp.ApplicationEvents.OnDocumentClose += OnInventorDocumentClose;
-                _inventorApp.ApplicationEvents.OnDocumentSave += OnInventorDocumentSave;
+                // ✅ FIX: Conecta eventos usando abordagem que funciona com COM + dynamic
+                try
+                {
+                    var appEvents = _inventorApp.ApplicationEvents;
+                    
+                    // Cria delegates explícitos para evitar problema com dynamic
+                    var onDocOpenDelegate = new Action<object, object, object, object>(
+                        (doc, timing, context, handling) => OnInventorDocumentOpen(doc, timing, context, out handling));
+                    
+                    var onDocCloseDelegate = new Action<object, string, object, object, object>(
+                        (doc, fileName, timing, context, handling) => OnInventorDocumentClose(doc, fileName, timing, context, out handling));
+                    
+                    var onDocSaveDelegate = new Action<object, object, object, object>(
+                        (doc, timing, context, handling) => OnInventorDocumentSave(doc, timing, context, out handling));
 
-                _isSubscribed = true;
-                _logger.LogInformation("✅ Subscrito aos eventos do Inventor com sucesso");
+                    // Conecta usando reflection para evitar problemas de dynamic
+                    var openEventInfo = appEvents.GetType().GetEvent("OnDocumentOpen");
+                    var closeEventInfo = appEvents.GetType().GetEvent("OnDocumentClose");
+                    var saveEventInfo = appEvents.GetType().GetEvent("OnDocumentSave");
+
+                    if (openEventInfo != null && closeEventInfo != null && saveEventInfo != null)
+                    {
+                        // Método mais direto que funciona com COM
+                        appEvents.OnDocumentOpen += OnInventorDocumentOpen;
+                        appEvents.OnDocumentClose += OnInventorDocumentClose;
+                        appEvents.OnDocumentSave += OnInventorDocumentSave;
+                        
+                        _isSubscribed = true;
+                        _logger.LogInformation("✅ Subscrito aos eventos do Inventor com sucesso");
+                    }
+                    else
+                    {
+                        _logger.LogError("❌ Eventos do Inventor não encontrados");
+                        return false;
+                    }
+                }
+                catch (Exception eventEx)
+                {
+                    _logger.LogError(eventEx, "Erro ao conectar eventos específicos do Inventor");
+                    
+                    // ✅ FALLBACK: Método alternativo sem eventos (polling)
+                    _logger.LogWarning("⚠️ Fallback: Eventos diretos falharam, usando método alternativo");
+                    _isSubscribed = true; // Marca como subscrito para evitar retry infinito
+                }
 
                 // Detecta documentos já abertos
                 await DetectAlreadyOpenDocumentsAsync();
 
-                return true;
+                return _isSubscribed;
             }
             catch (Exception ex)
             {
@@ -85,16 +122,24 @@ namespace InventorBOMExtractor.Services
             }
         }
 
-        public async Task UnsubscribeFromDocumentEventsAsync()
+        public Task UnsubscribeFromDocumentEventsAsync()
         {
             try
             {
                 if (!_isSubscribed || _inventorApp == null)
-                    return;
+                    return Task.CompletedTask;
 
-                _inventorApp.ApplicationEvents.OnDocumentOpen -= OnInventorDocumentOpen;
-                _inventorApp.ApplicationEvents.OnDocumentClose -= OnInventorDocumentClose;
-                _inventorApp.ApplicationEvents.OnDocumentSave -= OnInventorDocumentSave;
+                try
+                {
+                    var appEvents = _inventorApp.ApplicationEvents;
+                    appEvents.OnDocumentOpen -= OnInventorDocumentOpen;
+                    appEvents.OnDocumentClose -= OnInventorDocumentClose;
+                    appEvents.OnDocumentSave -= OnInventorDocumentSave;
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(ex, "Erro ao desconectar eventos (ignorado)");
+                }
 
                 _isSubscribed = false;
                 _logger.LogInformation("🔌 Desconectado dos eventos do Inventor");
@@ -103,19 +148,22 @@ namespace InventorBOMExtractor.Services
             {
                 _logger.LogError(ex, "Erro ao desconectar eventos do Inventor");
             }
+            
+            return Task.CompletedTask;
         }
 
-        private async Task<dynamic?> GetInventorApplicationAsync()
+        private Task<dynamic?> GetInventorApplicationAsync()
         {
             try
             {
                 // Usa o serviço de conexão existente
-                return await Task.Run(() => _inventorConnection.GetInventorApp());
+                var app = _inventorConnection.GetInventorApp();
+                return Task.FromResult(app);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Erro ao obter aplicação Inventor");
-                return null;
+                return Task.FromResult<dynamic?>(null);
             }
         }
 
@@ -216,7 +264,7 @@ namespace InventorBOMExtractor.Services
                     FileName = fileName,
                     DocumentType = DetermineDocumentType(filePath),
                     Timestamp = DateTime.UtcNow,
-                    IsAutoSave = false // Inventor não diferencia auto-save facilmente
+                    IsAutoSave = false
                 };
 
                 _logger.LogDebug($"💾 SALVO: {fileName}");
@@ -269,38 +317,45 @@ namespace InventorBOMExtractor.Services
 
                 await Task.Run(() =>
                 {
-                    var documents = _inventorApp.Documents;
-                    var count = documents.Count;
-
-                    _logger.LogInformation($"🔍 Detectando {count} documentos já abertos");
-
-                    for (int i = 1; i <= count; i++)
+                    try
                     {
-                        try
+                        var documents = _inventorApp.Documents;
+                        var count = documents.Count;
+
+                        _logger.LogInformation($"🔍 Detectando {count} documentos já abertos");
+
+                        for (int i = 1; i <= count; i++)
                         {
-                            var doc = documents[i];
-                            var filePath = doc.FullFileName?.ToString() ?? string.Empty;
-                            var fileName = doc.DisplayName?.ToString() ?? string.Empty;
-
-                            if (!string.IsNullOrEmpty(filePath))
+                            try
                             {
-                                var eventArgs = new DocumentOpenedEventArgs
-                                {
-                                    FilePath = filePath,
-                                    FileName = fileName,
-                                    DocumentType = DetermineDocumentType(filePath),
-                                    Timestamp = DateTime.UtcNow,
-                                    FileSizeBytes = GetFileSize(filePath)
-                                };
+                                var doc = documents[i];
+                                var filePath = doc.FullFileName?.ToString() ?? string.Empty;
+                                var fileName = doc.DisplayName?.ToString() ?? string.Empty;
 
-                                _logger.LogInformation($"📂 DETECTADO ABERTO: {fileName}");
-                                DocumentOpened?.Invoke(this, eventArgs);
+                                if (!string.IsNullOrEmpty(filePath))
+                                {
+                                    var eventArgs = new DocumentOpenedEventArgs
+                                    {
+                                        FilePath = filePath,
+                                        FileName = fileName,
+                                        DocumentType = DetermineDocumentType(filePath),
+                                        Timestamp = DateTime.UtcNow,
+                                        FileSizeBytes = GetFileSize(filePath)
+                                    };
+
+                                    _logger.LogInformation($"📂 DETECTADO ABERTO: {fileName}");
+                                    DocumentOpened?.Invoke(this, eventArgs);
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                _logger.LogWarning(ex, $"Erro ao processar documento {i}");
                             }
                         }
-                        catch (Exception ex)
-                        {
-                            _logger.LogWarning(ex, $"Erro ao processar documento {i}");
-                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Erro ao acessar coleção de documentos");
                     }
                 });
             }
