@@ -1,4 +1,4 @@
-// Models/DocumentEvent.cs
+// Models/DocumentEvent.cs - CORRIGIDO
 using System;
 
 namespace InventorBOMExtractor.Models
@@ -96,10 +96,24 @@ namespace InventorBOMExtractor.Models
         public string? Engineer { get; set; }
         public List<BomItem> BOMItems { get; set; } = new();
         
-        // Metadata agregado
+        // Metadata agregado - ✅ FIX: Corrigido tipos double
         public int TotalItems => BOMItems.Count;
-        public double TotalMass => BOMItems.Sum(b => b.Quantity * (b.Mass ?? 0.0));
-        public double TotalVolume => BOMItems.Sum(b => b.Quantity * (b.Volume ?? 0.0));
+        public double TotalMass => BOMItems.Sum(b => 
+        {
+            // Converte Quantity para double e Mass para double
+            var quantity = Convert.ToDouble(b.Quantity);
+            var mass = b.Mass;
+            return quantity * mass;
+        });
+        
+        public double TotalVolume => BOMItems.Sum(b => 
+        {
+            // Converte Quantity para double e Volume para double
+            var quantity = Convert.ToDouble(b.Quantity);
+            var volume = b.Volume;
+            return quantity * volume;
+        });
+        
         public string InventorVersion { get; set; } = string.Empty;
     }
 }

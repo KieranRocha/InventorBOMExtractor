@@ -1,4 +1,4 @@
-// Services/WorkSessionService.cs
+// Services/WorkSessionService.cs - CORRIGIDO
 using Microsoft.Extensions.Logging;
 using InventorBOMExtractor.Models;
 using InventorBOMExtractor.Events;
@@ -167,15 +167,15 @@ namespace InventorBOMExtractor.Services
             }
         }
 
-        public async Task<WorkSession?> GetWorkSessionAsync(string sessionId)
+        public Task<WorkSession?> GetWorkSessionAsync(string sessionId)
         {
             _activeSessions.TryGetValue(sessionId, out var workSession);
-            return await Task.FromResult(workSession);
+            return Task.FromResult(workSession);
         }
 
-        public async Task<List<WorkSession>> GetActiveWorkSessionsAsync()
+        public Task<List<WorkSession>> GetActiveWorkSessionsAsync()
         {
-            return await Task.FromResult(_activeSessions.Values.ToList());
+            return Task.FromResult(_activeSessions.Values.ToList());
         }
 
         public async Task<WorkSessionStatistics> GetDailyStatisticsAsync(DateTime date)
@@ -196,7 +196,7 @@ namespace InventorBOMExtractor.Services
 
         #region Statistics and Analytics
 
-        private async Task UpdateDailyStatisticsAsync(WorkSession completedSession)
+        private Task UpdateDailyStatisticsAsync(WorkSession completedSession)
         {
             try
             {
@@ -205,16 +205,19 @@ namespace InventorBOMExtractor.Services
                 // Remove do cache para forçar recálculo
                 _dailyStatsCache.TryRemove(dateKey, out _);
                 
-                // Recalcula estatísticas
-                await GetDailyStatisticsAsync(completedSession.StartTime.Date);
+                // ✅ FIX: Não precisa ser async aqui - operação simples
+                _logger.LogDebug($"Estatísticas diárias atualizadas para {dateKey}");
+                
+                return Task.CompletedTask;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Erro ao atualizar estatísticas diárias");
+                return Task.CompletedTask;
             }
         }
 
-        private async Task<WorkSessionStatistics> CalculateDailyStatisticsAsync(DateTime date)
+        private Task<WorkSessionStatistics> CalculateDailyStatisticsAsync(DateTime date)
         {
             try
             {
@@ -256,12 +259,12 @@ namespace InventorBOMExtractor.Services
                         .ToList()
                 };
 
-                return stats;
+                return Task.FromResult(stats);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, $"Erro ao calcular estatísticas para {date:yyyy-MM-dd}");
-                return new WorkSessionStatistics { Date = date.Date };
+                return Task.FromResult(new WorkSessionStatistics { Date = date.Date });
             }
         }
 
@@ -269,7 +272,7 @@ namespace InventorBOMExtractor.Services
 
         #region Helper Methods
 
-        private string GenerateSessionId()
+        private static string GenerateSessionId()
         {
             // Gera ID único baseado em timestamp + random
             var timestamp = DateTime.UtcNow.ToString("yyyyMMddHHmmss");
