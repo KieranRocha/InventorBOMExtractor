@@ -69,7 +69,7 @@ namespace InventorBOMExtractor.Services
                 _logger.LogInformation($"🚀 Work Session iniciada: {workSession.FileName} (ID: {workSession.Id})");
 
                 // Envia para API
-                await _apiCommunication.SendWorkSessionStartedAsync(workSession);
+                //await _apiCommunication.SendWorkSessionStartedAsync(workSession);
 
                 // Dispara evento
                 WorkSessionStarted?.Invoke(this, new WorkSessionStartedEventArgs

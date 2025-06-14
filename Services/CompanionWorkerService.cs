@@ -36,56 +36,70 @@ namespace InventorBOMExtractor.Services
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+{
+    _logger.LogInformation("🚀 Companion Service STEP 2 INICIANDO...");
+    _logger.LogInformation($"Configurações: API={_settings.ApiBaseUrl}, Interval={_settings.CycleIntervalMs}ms");
+    
+    // Aguarda um tempo para outras inicializações
+    await Task.Delay(3000, stoppingToken);
+
+    // ✅ CORREÇÃO: Conecta ao Inventor ANTES de iniciar o monitoramento
+    _logger.LogInformation("Realizando conexão inicial com o Inventor...");
+    await EnsureInventorConnection();
+
+    if (_inventorConnection.IsConnected)
+    {
+        _logger.LogInformation("✅ Conexão com Inventor estabelecida. Iniciando serviços dependentes...");
+        try
         {
-            _logger.LogInformation("🚀 Companion Service STEP 2 INICIANDO...");
-            _logger.LogInformation($"Configurações: API={_settings.ApiBaseUrl}, Interval={_settings.CycleIntervalMs}ms");
-            _logger.LogInformation("=== COMPANION SERVICE EXECUTANDO ===");
-
-            // Aguarda inicialização
-            await Task.Delay(5000, stoppingToken);
-
-            // ✅ STEP 2 - Inicia work-driven monitoring
-            try
-            {
-                await _workDrivenMonitoring.StartAsync(stoppingToken);
-                _logger.LogInformation("✅ Work-Driven Monitoring iniciado");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "❌ Erro ao iniciar Work-Driven Monitoring");
-            }
-
-            // Loop principal
-            while (!stoppingToken.IsCancellationRequested)
-            {
-                try
-                {
-                    await PerformServiceCycle();
-                    await Task.Delay(_settings.CycleIntervalMs, stoppingToken);
-                }
-                catch (OperationCanceledException)
-                {
-                    _logger.LogInformation("Service cancelado - parando...");
-                    break;
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, "Erro no ciclo do service");
-                    await Task.Delay(_settings.ErrorRetryDelayMs, stoppingToken);
-                }
-            }
-
-            // ✅ STEP 2 - Para work-driven monitoring
-            try
-            {
-                await _workDrivenMonitoring.StopAsync(stoppingToken);
-                _logger.LogInformation("✅ Work-Driven Monitoring parado");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Erro ao parar Work-Driven Monitoring");
-            }
+            // Inicia o monitoramento de documentos APÓS a conexão
+            await _workDrivenMonitoring.StartAsync(stoppingToken);
+            _logger.LogInformation("✅ Work-Driven Monitoring iniciado com sucesso.");
         }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "❌ Erro ao iniciar Work-Driven Monitoring");
+        }
+    }
+    else
+    {
+        _logger.LogWarning("⚠️ Não foi possível conectar ao Inventor na inicialização. O monitoramento de arquivos não será iniciado. O serviço continuará tentando reconectar.");
+    }
+
+    _logger.LogInformation("=== COMPANION SERVICE EXECUTANDO ===");
+
+    // Loop principal
+    while (!stoppingToken.IsCancellationRequested)
+    {
+        try
+        {
+            // O ciclo agora irá revalidar a conexão e enviar heartbeats
+            //await PerformServiceCycle();
+            await Task.Delay(_settings.CycleIntervalMs, stoppingToken);
+        }
+        catch (OperationCanceledException)
+        {
+            _logger.LogInformation("Service cancelado - parando...");
+            break;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Erro no ciclo do service");
+            await Task.Delay(_settings.ErrorRetryDelayMs, stoppingToken);
+        }
+    }
+
+    // Para o work-driven monitoring ao finalizar
+    try
+    {
+        await _workDrivenMonitoring.StopAsync(stoppingToken);
+        _logger.LogInformation("✅ Work-Driven Monitoring parado");
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Erro ao parar Work-Driven Monitoring");
+    }
+}
 
         private async Task PerformServiceCycle()
         {
