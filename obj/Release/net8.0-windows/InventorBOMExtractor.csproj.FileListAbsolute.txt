@@ -1,0 +1,5 @@
+C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\obj\Release\net8.0-windows\InventorBOMExtractor.csproj.AssemblyReference.cache
+C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\obj\Release\net8.0-windows\InventorBOMExtractor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\obj\Release\net8.0-windows\InventorBOMExtractor.AssemblyInfoInputs.cache
+C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\obj\Release\net8.0-windows\InventorBOMExtractor.AssemblyInfo.cs
+C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\obj\Release\net8.0-windows\InventorBOMExtractor.csproj.CoreCompileInputs.cache
