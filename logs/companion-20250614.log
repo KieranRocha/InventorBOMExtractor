@@ -3234,3 +3234,876 @@ System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a 
 2025-06-14 16:27:14.025 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\134538.ipt
 2025-06-14 16:27:14.026 -03:00 [INF] 🚀 Work Session iniciada: 134538.ipt (ID: d17e9768-b13b-4893-810c-4b9ea822d3ae)
 2025-06-14 16:27:14.026 -03:00 [INF] ✅ Monitoring ativo: 134538.ipt (Projeto: UNKNOWN) - Total: 28 watchers
+2025-06-14 16:30:33.954 -03:00 [INF] 📂 FECHADO: 0345385.iam
+2025-06-14 16:30:33.956 -03:00 [INF] 🔴 PARANDO monitoring: 0345385.iam
+2025-06-14 16:30:33.962 -03:00 [INF] 🏁 Work Session finalizada: 0345385.iam - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:33.964 -03:00 [INF] 📤 Enviando fim de work session: 0345385.iam - Duração: 00:03:20
+2025-06-14 16:30:34.010 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.014 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.039 -03:00 [INF] 📂 FECHADO: 089277.ipt
+2025-06-14 16:30:34.040 -03:00 [INF] 🔴 PARANDO monitoring: 089277.ipt
+2025-06-14 16:30:34.042 -03:00 [INF] 🏁 Work Session finalizada: 089277.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.042 -03:00 [INF] 📤 Enviando fim de work session: 089277.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.044 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.046 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.048 -03:00 [INF] 📂 FECHADO: 0313902.ipt
+2025-06-14 16:30:34.049 -03:00 [INF] 🔴 PARANDO monitoring: 0313902.ipt
+2025-06-14 16:30:34.051 -03:00 [INF] 🏁 Work Session finalizada: 0313902.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.051 -03:00 [INF] 📤 Enviando fim de work session: 0313902.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.052 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.053 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.054 -03:00 [INF] 📂 FECHADO: UNI 5589 - M16 - 2.IPT
+2025-06-14 16:30:34.054 -03:00 [INF] 🔴 PARANDO monitoring: UNI 5589 - M16 - 2.IPT
+2025-06-14 16:30:34.055 -03:00 [INF] 🏁 Work Session finalizada: UNI 5589 M16 - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.055 -03:00 [INF] 📤 Enviando fim de work session: UNI 5589 M16 - Duração: 00:03:20
+2025-06-14 16:30:34.056 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.057 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.058 -03:00 [INF] 📂 FECHADO: 0345580.ipt
+2025-06-14 16:30:34.058 -03:00 [INF] 🔴 PARANDO monitoring: 0345580.ipt
+2025-06-14 16:30:34.059 -03:00 [INF] 🏁 Work Session finalizada: 0345580.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.060 -03:00 [INF] 📤 Enviando fim de work session: 0345580.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.061 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.062 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.062 -03:00 [INF] 📂 FECHADO: 0345709.ipt
+2025-06-14 16:30:34.063 -03:00 [INF] 🔴 PARANDO monitoring: 0345709.ipt
+2025-06-14 16:30:34.064 -03:00 [INF] 🏁 Work Session finalizada: 0345709.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.065 -03:00 [INF] 📤 Enviando fim de work session: 0345709.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.065 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.066 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.067 -03:00 [INF] 📂 FECHADO: 0345710.ipt
+2025-06-14 16:30:34.067 -03:00 [INF] 🔴 PARANDO monitoring: 0345710.ipt
+2025-06-14 16:30:34.068 -03:00 [INF] 🏁 Work Session finalizada: 0345710.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.069 -03:00 [INF] 📤 Enviando fim de work session: 0345710.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.069 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.070 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.071 -03:00 [INF] 📂 FECHADO: 0345707.ipt
+2025-06-14 16:30:34.071 -03:00 [INF] 🔴 PARANDO monitoring: 0345707.ipt
+2025-06-14 16:30:34.072 -03:00 [INF] 🏁 Work Session finalizada: 0345707.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.073 -03:00 [INF] 📤 Enviando fim de work session: 0345707.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.073 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.074 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.075 -03:00 [INF] 📂 FECHADO: 0345708.ipt
+2025-06-14 16:30:34.075 -03:00 [INF] 🔴 PARANDO monitoring: 0345708.ipt
+2025-06-14 16:30:34.076 -03:00 [INF] 🏁 Work Session finalizada: 0345708.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.077 -03:00 [INF] 📤 Enviando fim de work session: 0345708.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.078 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.079 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.079 -03:00 [INF] 📂 FECHADO: 0345536.ipt
+2025-06-14 16:30:34.080 -03:00 [INF] 🔴 PARANDO monitoring: 0345536.ipt
+2025-06-14 16:30:34.081 -03:00 [INF] 🏁 Work Session finalizada: 0345536.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.082 -03:00 [INF] 📤 Enviando fim de work session: 0345536.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.082 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.083 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.084 -03:00 [INF] 📂 FECHADO: 0345538.ipt
+2025-06-14 16:30:34.084 -03:00 [INF] 🔴 PARANDO monitoring: 0345538.ipt
+2025-06-14 16:30:34.085 -03:00 [INF] 🏁 Work Session finalizada: 0345538.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.086 -03:00 [INF] 📤 Enviando fim de work session: 0345538.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.086 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.087 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.088 -03:00 [INF] 📂 FECHADO: 088259.ipt
+2025-06-14 16:30:34.089 -03:00 [INF] 🔴 PARANDO monitoring: 088259.ipt
+2025-06-14 16:30:34.089 -03:00 [INF] 🏁 Work Session finalizada: 088259.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.090 -03:00 [INF] 📤 Enviando fim de work session: 088259.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.090 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.091 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.092 -03:00 [INF] 📂 FECHADO: 111646.ipt
+2025-06-14 16:30:34.093 -03:00 [INF] 🔴 PARANDO monitoring: 111646.ipt
+2025-06-14 16:30:34.094 -03:00 [INF] 🏁 Work Session finalizada: 111646.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.094 -03:00 [INF] 📤 Enviando fim de work session: 111646.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.095 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.096 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.097 -03:00 [INF] 📂 FECHADO: 0254385.ipt
+2025-06-14 16:30:34.098 -03:00 [INF] 🔴 PARANDO monitoring: 0254385.ipt
+2025-06-14 16:30:34.098 -03:00 [INF] 🏁 Work Session finalizada: 0254385.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.099 -03:00 [INF] 📤 Enviando fim de work session: 0254385.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.100 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.100 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.101 -03:00 [INF] 📂 FECHADO: 0321862.ipt
+2025-06-14 16:30:34.102 -03:00 [INF] 🔴 PARANDO monitoring: 0321862.ipt
+2025-06-14 16:30:34.102 -03:00 [INF] 🏁 Work Session finalizada: 0321862.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.103 -03:00 [INF] 📤 Enviando fim de work session: 0321862.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.104 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.104 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.105 -03:00 [INF] 📂 FECHADO: 0307215.iam
+2025-06-14 16:30:34.106 -03:00 [INF] 🔴 PARANDO monitoring: 0307215.iam
+2025-06-14 16:30:34.106 -03:00 [INF] 🏁 Work Session finalizada: 0307215.iam - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.107 -03:00 [INF] 📤 Enviando fim de work session: 0307215.iam - Duração: 00:03:20
+2025-06-14 16:30:34.108 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.108 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.109 -03:00 [INF] 📂 FECHADO: CP96SDB63-100C_1.ipt
+2025-06-14 16:30:34.110 -03:00 [INF] 🔴 PARANDO monitoring: CP96SDB63-100C_1.ipt
+2025-06-14 16:30:34.111 -03:00 [INF] 🏁 Work Session finalizada: CP96SDB63-100C_1.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.112 -03:00 [INF] 📤 Enviando fim de work session: CP96SDB63-100C_1.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.112 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.113 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.114 -03:00 [INF] 📂 FECHADO: CP96SDB63-100C_2.ipt
+2025-06-14 16:30:34.115 -03:00 [INF] 🔴 PARANDO monitoring: CP96SDB63-100C_2.ipt
+2025-06-14 16:30:34.116 -03:00 [INF] 🏁 Work Session finalizada: CP96SDB63-100C_2.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.116 -03:00 [INF] 📤 Enviando fim de work session: CP96SDB63-100C_2.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.117 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.117 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.118 -03:00 [INF] 📂 FECHADO: 0345546.ipt
+2025-06-14 16:30:34.119 -03:00 [INF] 🔴 PARANDO monitoring: 0345546.ipt
+2025-06-14 16:30:34.119 -03:00 [INF] 🏁 Work Session finalizada: 0345546.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.120 -03:00 [INF] 📤 Enviando fim de work session: 0345546.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.121 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.122 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.123 -03:00 [INF] 📂 FECHADO: 0345712.ipt
+2025-06-14 16:30:34.123 -03:00 [INF] 🔴 PARANDO monitoring: 0345712.ipt
+2025-06-14 16:30:34.124 -03:00 [INF] 🏁 Work Session finalizada: 0345712.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.124 -03:00 [INF] 📤 Enviando fim de work session: 0345712.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.125 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.126 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.127 -03:00 [INF] 📂 FECHADO: 0345713.ipt
+2025-06-14 16:30:34.128 -03:00 [INF] 🔴 PARANDO monitoring: 0345713.ipt
+2025-06-14 16:30:34.129 -03:00 [INF] 🏁 Work Session finalizada: 0345713.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.129 -03:00 [INF] 📤 Enviando fim de work session: 0345713.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.130 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.131 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.132 -03:00 [INF] 📂 FECHADO: 0345711.ipt
+2025-06-14 16:30:34.133 -03:00 [INF] 🔴 PARANDO monitoring: 0345711.ipt
+2025-06-14 16:30:34.134 -03:00 [INF] 🏁 Work Session finalizada: 0345711.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.134 -03:00 [INF] 📤 Enviando fim de work session: 0345711.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.135 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.136 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.136 -03:00 [INF] 📂 FECHADO: 0345714.ipt
+2025-06-14 16:30:34.137 -03:00 [INF] 🔴 PARANDO monitoring: 0345714.ipt
+2025-06-14 16:30:34.138 -03:00 [INF] 🏁 Work Session finalizada: 0345714.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.138 -03:00 [INF] 📤 Enviando fim de work session: 0345714.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.139 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.140 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.141 -03:00 [INF] 📂 FECHADO: 0345715.ipt
+2025-06-14 16:30:34.141 -03:00 [INF] 🔴 PARANDO monitoring: 0345715.ipt
+2025-06-14 16:30:34.142 -03:00 [INF] 🏁 Work Session finalizada: 0345715.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.142 -03:00 [INF] 📤 Enviando fim de work session: 0345715.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.143 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.144 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.145 -03:00 [INF] 📂 FECHADO: 0345716.ipt
+2025-06-14 16:30:34.146 -03:00 [INF] 🔴 PARANDO monitoring: 0345716.ipt
+2025-06-14 16:30:34.146 -03:00 [INF] 🏁 Work Session finalizada: 0345716.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.147 -03:00 [INF] 📤 Enviando fim de work session: 0345716.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.148 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.149 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.150 -03:00 [INF] 📂 FECHADO: 0345717.ipt
+2025-06-14 16:30:34.150 -03:00 [INF] 🔴 PARANDO monitoring: 0345717.ipt
+2025-06-14 16:30:34.151 -03:00 [INF] 🏁 Work Session finalizada: 0345717.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.152 -03:00 [INF] 📤 Enviando fim de work session: 0345717.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.152 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.162 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.163 -03:00 [INF] 📂 FECHADO: 0345718.ipt
+2025-06-14 16:30:34.164 -03:00 [INF] 🔴 PARANDO monitoring: 0345718.ipt
+2025-06-14 16:30:34.165 -03:00 [INF] 🏁 Work Session finalizada: 0345718.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.165 -03:00 [INF] 📤 Enviando fim de work session: 0345718.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.166 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.167 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.169 -03:00 [INF] 📂 FECHADO: 134538.ipt
+2025-06-14 16:30:34.169 -03:00 [INF] 🔴 PARANDO monitoring: 134538.ipt
+2025-06-14 16:30:34.170 -03:00 [INF] 🏁 Work Session finalizada: 134538.ipt - Duração: 00:03:20 - 0 saves
+2025-06-14 16:30:34.171 -03:00 [INF] 📤 Enviando fim de work session: 134538.ipt - Duração: 00:03:20
+2025-06-14 16:30:34.171 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:34.172 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/ended
+2025-06-14 16:30:38.086 -03:00 [ERR] Erro ao enviar work session finalizada: b8158a0b-213e-4f1a-ace2-859ac0487fa1
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.086 -03:00 [ERR] Erro ao enviar work session finalizada: 4cfe1b67-e413-4dd1-a97a-2b4e7c14b6cd
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.098 -03:00 [ERR] Erro ao enviar work session finalizada: e0742d16-eb25-4cca-9479-9efed2e23a31
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.098 -03:00 [ERR] Erro ao enviar work session finalizada: 040676d8-5101-4280-9cdc-9a37ac4e45d2
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.102 -03:00 [INF] ✅ Monitoring parado: UNI 5589 - M16 - 2.IPT - Restam: 0 watchers
+2025-06-14 16:30:38.106 -03:00 [INF] ✅ Monitoring parado: 0313902.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.111 -03:00 [INF] ✅ Monitoring parado: 089277.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.113 -03:00 [ERR] Erro ao enviar work session finalizada: e519f48a-6333-4f4b-bcc0-c30004d766a9
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.113 -03:00 [ERR] Erro ao enviar work session finalizada: 5268b3ae-4b92-427c-acb2-c4a45182d1e7
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.113 -03:00 [ERR] Erro ao enviar work session finalizada: e5a93b76-9184-4ef5-ad7e-744b25d04a50
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.114 -03:00 [ERR] Erro ao enviar work session finalizada: 64e8751a-743a-42e3-a0da-b249923d0a37
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.115 -03:00 [INF] ✅ Monitoring parado: 0345385.iam - Restam: 0 watchers
+2025-06-14 16:30:38.125 -03:00 [INF] ✅ Monitoring parado: 0345580.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.129 -03:00 [ERR] Erro ao enviar work session finalizada: 89cd3f9f-b2ab-4bc9-b7b3-50bd434614e7
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.129 -03:00 [ERR] Erro ao enviar work session finalizada: 8af9e678-9e0d-4442-8472-9e4dc7329ced
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.129 -03:00 [INF] ✅ Monitoring parado: 0345710.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.133 -03:00 [INF] ✅ Monitoring parado: 0345709.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.137 -03:00 [INF] ✅ Monitoring parado: 0345707.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.141 -03:00 [INF] ✅ Monitoring parado: 0345536.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.145 -03:00 [ERR] Erro ao enviar work session finalizada: 592518ca-6c24-4a10-a6fc-79a1e42e432e
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.145 -03:00 [ERR] Erro ao enviar work session finalizada: 467d5cdf-a0d7-46e8-a7f0-cf090244e549
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.145 -03:00 [ERR] Erro ao enviar work session finalizada: 4e0bd28c-d471-4961-98e6-2508ccf96981
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.145 -03:00 [ERR] Erro ao enviar work session finalizada: 6cea3ba7-fb5e-45dc-9b3d-c58a34183a41
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.145 -03:00 [INF] ✅ Monitoring parado: 0345708.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.145 -03:00 [ERR] Erro ao enviar work session finalizada: 1333664e-57c7-40e4-80b4-f3859815b2e6
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.152 -03:00 [INF] ✅ Monitoring parado: 111646.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.155 -03:00 [INF] ✅ Monitoring parado: 0254385.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.160 -03:00 [INF] ✅ Monitoring parado: 0321862.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.160 -03:00 [ERR] Erro ao enviar work session finalizada: aaab5c74-9c5c-450e-a7f0-1b66046711b2
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.160 -03:00 [ERR] Erro ao enviar work session finalizada: 92f44eee-2aab-4c62-a497-a56aeccb96cd
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.161 -03:00 [ERR] Erro ao enviar work session finalizada: 29306637-18fa-4ad6-bf7d-5d626db10d91
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.164 -03:00 [INF] ✅ Monitoring parado: 088259.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.168 -03:00 [INF] ✅ Monitoring parado: 0345538.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.173 -03:00 [INF] ✅ Monitoring parado: 0307215.iam - Restam: 0 watchers
+2025-06-14 16:30:38.177 -03:00 [ERR] Erro ao enviar work session finalizada: 6df4e4ea-d1c8-4f3b-8455-30ae22e4f07d
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.178 -03:00 [INF] ✅ Monitoring parado: CP96SDB63-100C_1.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.181 -03:00 [INF] ✅ Monitoring parado: CP96SDB63-100C_2.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.187 -03:00 [INF] ✅ Monitoring parado: 0345711.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.193 -03:00 [ERR] Erro ao enviar work session finalizada: 4bf47970-dd36-44c5-be6a-ee04a3a0d7ed
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.193 -03:00 [ERR] Erro ao enviar work session finalizada: d1bbed73-81a8-4784-b635-0076cb68c47e
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.193 -03:00 [ERR] Erro ao enviar work session finalizada: 244e5564-9ffb-435d-b1a8-57599737a930
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.199 -03:00 [INF] ✅ Monitoring parado: 0345546.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.203 -03:00 [INF] ✅ Monitoring parado: 0345713.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.207 -03:00 [INF] ✅ Monitoring parado: 0345712.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.208 -03:00 [ERR] Erro ao enviar work session finalizada: 1c2bd552-a16e-49fa-b8ac-a62dfa9d5611
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.208 -03:00 [ERR] Erro ao enviar work session finalizada: 5d0544ab-a38f-4784-9d03-26529da7f604
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.208 -03:00 [ERR] Erro ao enviar work session finalizada: a91a2d3a-3f39-4cb4-b738-b1f97b6359bd
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.213 -03:00 [INF] ✅ Monitoring parado: 0345714.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.217 -03:00 [INF] ✅ Monitoring parado: 0345716.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.220 -03:00 [INF] ✅ Monitoring parado: 0345715.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.223 -03:00 [ERR] Erro ao enviar work session finalizada: 272a4581-8e5a-4c81-9743-65a467a1c445
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.223 -03:00 [ERR] Erro ao enviar work session finalizada: 1889e361-0384-4483-a3e2-e2b55ce077d5
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.228 -03:00 [INF] ✅ Monitoring parado: 0345718.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.232 -03:00 [INF] ✅ Monitoring parado: 0345717.ipt - Restam: 0 watchers
+2025-06-14 16:30:38.239 -03:00 [ERR] Erro ao enviar work session finalizada: d17e9768-b13b-4893-810c-4b9ea822d3ae
+System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente. (localhost:5001)
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at InventorBOMExtractor.Services.ApiCommunicationService.SendWorkSessionEndedAsync(WorkSession workSession) in C:\Users\kiera\OneDrive\Pessoal\ultra 1.0\InventorBOMExtractor\Services\ApiCommunicationService.cs:line 225
+2025-06-14 16:30:38.246 -03:00 [INF] ✅ Monitoring parado: 134538.ipt - Restam: 0 watchers
+2025-06-14 16:34:09.958 -03:00 [INF] 📂 ABERTO: 0345385.iam
+2025-06-14 16:34:09.958 -03:00 [INF] 🔥 INICIANDO monitoring: 0345385.iam
+2025-06-14 16:34:09.959 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345385.iam
+2025-06-14 16:34:09.960 -03:00 [INF] 🚀 Work Session iniciada: 0345385.iam (ID: d7a19735-0219-469c-ab71-abf494b477a5)
+2025-06-14 16:34:09.961 -03:00 [INF] ✅ Monitoring ativo: 0345385.iam (Projeto: UNKNOWN) - Total: 1 watchers
+2025-06-14 16:34:09.969 -03:00 [INF] 📂 ABERTO: 089277.ipt
+2025-06-14 16:34:09.970 -03:00 [INF] 🔥 INICIANDO monitoring: 089277.ipt
+2025-06-14 16:34:09.971 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\089277.ipt
+2025-06-14 16:34:09.972 -03:00 [INF] 🚀 Work Session iniciada: 089277.ipt (ID: ec77adb7-ccc2-4ef0-bfa2-2564f20240a0)
+2025-06-14 16:34:09.974 -03:00 [INF] ✅ Monitoring ativo: 089277.ipt (Projeto: UNKNOWN) - Total: 2 watchers
+2025-06-14 16:34:09.978 -03:00 [INF] 📂 ABERTO: 0313902.ipt
+2025-06-14 16:34:09.978 -03:00 [INF] 🔥 INICIANDO monitoring: 0313902.ipt
+2025-06-14 16:34:09.979 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0313902.ipt
+2025-06-14 16:34:09.980 -03:00 [INF] 🚀 Work Session iniciada: 0313902.ipt (ID: 3bd2d175-1dbd-4d4d-a8bb-c26666025f91)
+2025-06-14 16:34:09.981 -03:00 [INF] ✅ Monitoring ativo: 0313902.ipt (Projeto: UNKNOWN) - Total: 3 watchers
+2025-06-14 16:34:09.988 -03:00 [INF] 📂 ABERTO: UNI 5589 M16
+2025-06-14 16:34:09.988 -03:00 [INF] 🔥 INICIANDO monitoring: UNI 5589 M16
+2025-06-14 16:34:09.989 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\UNI 5589 - M16 - 2.IPT
+2025-06-14 16:34:09.991 -03:00 [INF] 🚀 Work Session iniciada: UNI 5589 M16 (ID: 60dce642-7aa8-4279-bc1c-db432b56bf24)
+2025-06-14 16:34:09.992 -03:00 [INF] ✅ Monitoring ativo: UNI 5589 M16 (Projeto: UNKNOWN) - Total: 4 watchers
+2025-06-14 16:34:09.996 -03:00 [INF] 📂 ABERTO: 0345580.ipt
+2025-06-14 16:34:09.997 -03:00 [INF] 🔥 INICIANDO monitoring: 0345580.ipt
+2025-06-14 16:34:09.997 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345580.ipt
+2025-06-14 16:34:09.999 -03:00 [INF] 🚀 Work Session iniciada: 0345580.ipt (ID: ca4c9ba8-2880-4c38-a86a-45e0ab3a64e2)
+2025-06-14 16:34:09.999 -03:00 [INF] ✅ Monitoring ativo: 0345580.ipt (Projeto: UNKNOWN) - Total: 5 watchers
+2025-06-14 16:34:10.003 -03:00 [INF] 📂 ABERTO: 0345709.ipt
+2025-06-14 16:34:10.004 -03:00 [INF] 🔥 INICIANDO monitoring: 0345709.ipt
+2025-06-14 16:34:10.005 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345709.ipt
+2025-06-14 16:34:10.007 -03:00 [INF] 🚀 Work Session iniciada: 0345709.ipt (ID: a55af12f-7283-4a68-b220-f2c728be6f20)
+2025-06-14 16:34:10.008 -03:00 [INF] ✅ Monitoring ativo: 0345709.ipt (Projeto: UNKNOWN) - Total: 6 watchers
+2025-06-14 16:34:10.012 -03:00 [INF] 📂 ABERTO: 0345710.ipt
+2025-06-14 16:34:10.012 -03:00 [INF] 🔥 INICIANDO monitoring: 0345710.ipt
+2025-06-14 16:34:10.013 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345710.ipt
+2025-06-14 16:34:10.015 -03:00 [INF] 🚀 Work Session iniciada: 0345710.ipt (ID: 41bc6028-3687-4552-8707-45e48079790d)
+2025-06-14 16:34:10.015 -03:00 [INF] ✅ Monitoring ativo: 0345710.ipt (Projeto: UNKNOWN) - Total: 7 watchers
+2025-06-14 16:34:10.023 -03:00 [INF] 📂 ABERTO: 0345707.ipt
+2025-06-14 16:34:10.024 -03:00 [INF] 🔥 INICIANDO monitoring: 0345707.ipt
+2025-06-14 16:34:10.025 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345707.ipt
+2025-06-14 16:34:10.026 -03:00 [INF] 🚀 Work Session iniciada: 0345707.ipt (ID: d475abc7-da1a-42de-83eb-4514beca3e5d)
+2025-06-14 16:34:10.027 -03:00 [INF] ✅ Monitoring ativo: 0345707.ipt (Projeto: UNKNOWN) - Total: 8 watchers
+2025-06-14 16:34:10.034 -03:00 [INF] 📂 ABERTO: 0345708.ipt
+2025-06-14 16:34:10.035 -03:00 [INF] 🔥 INICIANDO monitoring: 0345708.ipt
+2025-06-14 16:34:10.036 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345708.ipt
+2025-06-14 16:34:10.037 -03:00 [INF] 🚀 Work Session iniciada: 0345708.ipt (ID: 79cc7278-6cd5-486e-8fa7-c2794a879423)
+2025-06-14 16:34:10.037 -03:00 [INF] ✅ Monitoring ativo: 0345708.ipt (Projeto: UNKNOWN) - Total: 9 watchers
+2025-06-14 16:34:10.046 -03:00 [INF] 📂 ABERTO: 0345536.ipt
+2025-06-14 16:34:10.046 -03:00 [INF] 🔥 INICIANDO monitoring: 0345536.ipt
+2025-06-14 16:34:10.047 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345536.ipt
+2025-06-14 16:34:10.048 -03:00 [INF] 🚀 Work Session iniciada: 0345536.ipt (ID: 1b937374-6896-45cd-87b2-7be016f7898f)
+2025-06-14 16:34:10.048 -03:00 [INF] ✅ Monitoring ativo: 0345536.ipt (Projeto: UNKNOWN) - Total: 10 watchers
+2025-06-14 16:34:10.052 -03:00 [INF] 📂 ABERTO: 0345538.ipt
+2025-06-14 16:34:10.053 -03:00 [INF] 🔥 INICIANDO monitoring: 0345538.ipt
+2025-06-14 16:34:10.054 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345538.ipt
+2025-06-14 16:34:10.055 -03:00 [INF] 🚀 Work Session iniciada: 0345538.ipt (ID: c0fb5250-0ccd-4157-a7dc-63c41afdb0f6)
+2025-06-14 16:34:10.056 -03:00 [INF] ✅ Monitoring ativo: 0345538.ipt (Projeto: UNKNOWN) - Total: 11 watchers
+2025-06-14 16:34:10.061 -03:00 [INF] 📂 ABERTO: 088259.ipt
+2025-06-14 16:34:10.061 -03:00 [INF] 🔥 INICIANDO monitoring: 088259.ipt
+2025-06-14 16:34:10.062 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\088259.ipt
+2025-06-14 16:34:10.063 -03:00 [INF] 🚀 Work Session iniciada: 088259.ipt (ID: 5705c668-5a4a-460f-8038-7461cf9ef1ff)
+2025-06-14 16:34:10.064 -03:00 [INF] ✅ Monitoring ativo: 088259.ipt (Projeto: UNKNOWN) - Total: 12 watchers
+2025-06-14 16:34:10.077 -03:00 [INF] 📂 ABERTO: 111646.ipt
+2025-06-14 16:34:10.079 -03:00 [INF] 🔥 INICIANDO monitoring: 111646.ipt
+2025-06-14 16:34:10.079 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\111646.ipt
+2025-06-14 16:34:10.080 -03:00 [INF] 🚀 Work Session iniciada: 111646.ipt (ID: e86d5460-b1e7-4e65-9520-d183cfe5003d)
+2025-06-14 16:34:10.081 -03:00 [INF] ✅ Monitoring ativo: 111646.ipt (Projeto: UNKNOWN) - Total: 13 watchers
+2025-06-14 16:34:10.086 -03:00 [INF] 📂 ABERTO: 0254385.ipt
+2025-06-14 16:34:10.087 -03:00 [INF] 🔥 INICIANDO monitoring: 0254385.ipt
+2025-06-14 16:34:10.088 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0254385.ipt
+2025-06-14 16:34:10.089 -03:00 [INF] 🚀 Work Session iniciada: 0254385.ipt (ID: 72e9900a-90e4-4de4-8e57-ec8314e809f3)
+2025-06-14 16:34:10.090 -03:00 [INF] ✅ Monitoring ativo: 0254385.ipt (Projeto: UNKNOWN) - Total: 14 watchers
+2025-06-14 16:34:10.095 -03:00 [INF] 📂 ABERTO: 0321862.ipt
+2025-06-14 16:34:10.096 -03:00 [INF] 🔥 INICIANDO monitoring: 0321862.ipt
+2025-06-14 16:34:10.097 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0321862.ipt
+2025-06-14 16:34:10.098 -03:00 [INF] 🚀 Work Session iniciada: 0321862.ipt (ID: 66a675c4-9a21-4cd8-b7ff-37d37d89b1bf)
+2025-06-14 16:34:10.098 -03:00 [INF] ✅ Monitoring ativo: 0321862.ipt (Projeto: UNKNOWN) - Total: 15 watchers
+2025-06-14 16:34:10.102 -03:00 [INF] 📂 ABERTO: 0307215.iam
+2025-06-14 16:34:10.103 -03:00 [INF] 🔥 INICIANDO monitoring: 0307215.iam
+2025-06-14 16:34:10.103 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0307215.iam
+2025-06-14 16:34:10.105 -03:00 [INF] 🚀 Work Session iniciada: 0307215.iam (ID: d63673ef-cbde-4eb4-b6ad-6db85f354a2c)
+2025-06-14 16:34:10.106 -03:00 [INF] ✅ Monitoring ativo: 0307215.iam (Projeto: UNKNOWN) - Total: 16 watchers
+2025-06-14 16:34:10.111 -03:00 [INF] 📂 ABERTO: CP96SDB63-100C_1.ipt
+2025-06-14 16:34:10.111 -03:00 [INF] 🔥 INICIANDO monitoring: CP96SDB63-100C_1.ipt
+2025-06-14 16:34:10.112 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\CP96SDB63-100C_1.ipt
+2025-06-14 16:34:10.113 -03:00 [INF] 🚀 Work Session iniciada: CP96SDB63-100C_1.ipt (ID: 5f9c2efb-f1d7-4dd5-929c-8b2231815cda)
+2025-06-14 16:34:10.114 -03:00 [INF] ✅ Monitoring ativo: CP96SDB63-100C_1.ipt (Projeto: UNKNOWN) - Total: 17 watchers
+2025-06-14 16:34:10.121 -03:00 [INF] 📂 ABERTO: CP96SDB63-100C_2.ipt
+2025-06-14 16:34:10.122 -03:00 [INF] 🔥 INICIANDO monitoring: CP96SDB63-100C_2.ipt
+2025-06-14 16:34:10.123 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\CP96SDB63-100C_2.ipt
+2025-06-14 16:34:10.124 -03:00 [INF] 🚀 Work Session iniciada: CP96SDB63-100C_2.ipt (ID: 49d89d3a-701c-4a6e-9b41-9238481ae227)
+2025-06-14 16:34:10.125 -03:00 [INF] ✅ Monitoring ativo: CP96SDB63-100C_2.ipt (Projeto: UNKNOWN) - Total: 18 watchers
+2025-06-14 16:34:10.134 -03:00 [INF] 📂 ABERTO: 0345546.ipt
+2025-06-14 16:34:10.135 -03:00 [INF] 🔥 INICIANDO monitoring: 0345546.ipt
+2025-06-14 16:34:10.136 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345546.ipt
+2025-06-14 16:34:10.137 -03:00 [INF] 🚀 Work Session iniciada: 0345546.ipt (ID: c9d81379-e218-47c5-b5be-0e8fac02929a)
+2025-06-14 16:34:10.137 -03:00 [INF] ✅ Monitoring ativo: 0345546.ipt (Projeto: UNKNOWN) - Total: 19 watchers
+2025-06-14 16:34:10.145 -03:00 [INF] 📂 ABERTO: 0345712.ipt
+2025-06-14 16:34:10.145 -03:00 [INF] 🔥 INICIANDO monitoring: 0345712.ipt
+2025-06-14 16:34:10.146 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345712.ipt
+2025-06-14 16:34:10.147 -03:00 [INF] 🚀 Work Session iniciada: 0345712.ipt (ID: f4b05900-9de5-490c-bb4c-ca04b366b3a3)
+2025-06-14 16:34:10.148 -03:00 [INF] ✅ Monitoring ativo: 0345712.ipt (Projeto: UNKNOWN) - Total: 20 watchers
+2025-06-14 16:34:10.157 -03:00 [INF] 📂 ABERTO: 0345713.ipt
+2025-06-14 16:34:10.157 -03:00 [INF] 🔥 INICIANDO monitoring: 0345713.ipt
+2025-06-14 16:34:10.158 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345713.ipt
+2025-06-14 16:34:10.159 -03:00 [INF] 🚀 Work Session iniciada: 0345713.ipt (ID: bd8a4289-fcba-4e87-bbb7-b483746cc1e7)
+2025-06-14 16:34:10.160 -03:00 [INF] ✅ Monitoring ativo: 0345713.ipt (Projeto: UNKNOWN) - Total: 21 watchers
+2025-06-14 16:34:10.168 -03:00 [INF] 📂 ABERTO: 0345711.ipt
+2025-06-14 16:34:10.169 -03:00 [INF] 🔥 INICIANDO monitoring: 0345711.ipt
+2025-06-14 16:34:10.170 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345711.ipt
+2025-06-14 16:34:10.171 -03:00 [INF] 🚀 Work Session iniciada: 0345711.ipt (ID: d8bcddfa-f9b3-4e34-bcd9-bf936a3cdb3f)
+2025-06-14 16:34:10.172 -03:00 [INF] ✅ Monitoring ativo: 0345711.ipt (Projeto: UNKNOWN) - Total: 22 watchers
+2025-06-14 16:34:10.181 -03:00 [INF] 📂 ABERTO: 0345714.ipt
+2025-06-14 16:34:10.182 -03:00 [INF] 🔥 INICIANDO monitoring: 0345714.ipt
+2025-06-14 16:34:10.183 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345714.ipt
+2025-06-14 16:34:10.184 -03:00 [INF] 🚀 Work Session iniciada: 0345714.ipt (ID: 5b16896b-0618-481f-a87e-e1aba4d48d66)
+2025-06-14 16:34:10.184 -03:00 [INF] ✅ Monitoring ativo: 0345714.ipt (Projeto: UNKNOWN) - Total: 23 watchers
+2025-06-14 16:34:10.193 -03:00 [INF] 📂 ABERTO: 0345715.ipt
+2025-06-14 16:34:10.194 -03:00 [INF] 🔥 INICIANDO monitoring: 0345715.ipt
+2025-06-14 16:34:10.195 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345715.ipt
+2025-06-14 16:34:10.196 -03:00 [INF] 🚀 Work Session iniciada: 0345715.ipt (ID: 98393841-257b-464a-9466-c8c70ffecec8)
+2025-06-14 16:34:10.196 -03:00 [INF] ✅ Monitoring ativo: 0345715.ipt (Projeto: UNKNOWN) - Total: 24 watchers
+2025-06-14 16:34:10.205 -03:00 [INF] 📂 ABERTO: 0345716.ipt
+2025-06-14 16:34:10.207 -03:00 [INF] 🔥 INICIANDO monitoring: 0345716.ipt
+2025-06-14 16:34:10.208 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345716.ipt
+2025-06-14 16:34:10.209 -03:00 [INF] 🚀 Work Session iniciada: 0345716.ipt (ID: b6de09d2-48ef-46bb-9702-f132de9446ac)
+2025-06-14 16:34:10.210 -03:00 [INF] ✅ Monitoring ativo: 0345716.ipt (Projeto: UNKNOWN) - Total: 25 watchers
+2025-06-14 16:34:10.215 -03:00 [INF] 📂 ABERTO: 0345717.ipt
+2025-06-14 16:34:10.215 -03:00 [INF] 🔥 INICIANDO monitoring: 0345717.ipt
+2025-06-14 16:34:10.216 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345717.ipt
+2025-06-14 16:34:10.218 -03:00 [INF] 🚀 Work Session iniciada: 0345717.ipt (ID: 9df4c41a-2264-4d18-a613-913326c21dca)
+2025-06-14 16:34:10.218 -03:00 [INF] ✅ Monitoring ativo: 0345717.ipt (Projeto: UNKNOWN) - Total: 26 watchers
+2025-06-14 16:34:10.222 -03:00 [INF] 📂 ABERTO: 0345718.ipt
+2025-06-14 16:34:10.223 -03:00 [INF] 🔥 INICIANDO monitoring: 0345718.ipt
+2025-06-14 16:34:10.225 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345718.ipt
+2025-06-14 16:34:10.227 -03:00 [INF] 🚀 Work Session iniciada: 0345718.ipt (ID: 20efe1e4-1110-4d19-b424-2169039fe040)
+2025-06-14 16:34:10.227 -03:00 [INF] ✅ Monitoring ativo: 0345718.ipt (Projeto: UNKNOWN) - Total: 27 watchers
+2025-06-14 16:34:10.238 -03:00 [INF] 📂 ABERTO: 134538.ipt
+2025-06-14 16:34:10.239 -03:00 [INF] 🔥 INICIANDO monitoring: 134538.ipt
+2025-06-14 16:34:10.240 -03:00 [WRN] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\134538.ipt
+2025-06-14 16:34:10.241 -03:00 [INF] 🚀 Work Session iniciada: 134538.ipt (ID: 2c938368-0c64-4ec9-94fa-62cd6c814079)
+2025-06-14 16:34:10.242 -03:00 [INF] ✅ Monitoring ativo: 134538.ipt (Projeto: UNKNOWN) - Total: 28 watchers
+2025-06-14 16:39:34.173 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/documents/activity
+2025-06-14 16:39:34.174 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/documents/activity
+2025-06-14 16:39:36.983 -03:00 [INF] 💾 SAVE #1: 0345710.ipt
+2025-06-14 16:39:36.989 -03:00 [INF] Start processing HTTP request POST https://localhost:5001/api/work-sessions/updated
+2025-06-14 16:39:36.990 -03:00 [INF] Sending HTTP request POST https://localhost:5001/api/work-sessions/updated

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste CAD Companion Web API</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .status {
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 0;
+      }
+      .status.connected {
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+        color: #155724;
+      }
+      .status.disconnected {
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        color: #721c24;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      button:disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+      }
+      .file-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin: 10px 0;
+      }
+      .result {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 15px;
+        margin: 10px 0;
+        white-space: pre-wrap;
+        font-family: monospace;
+        font-size: 12px;
+        max-height: 400px;
+        overflow-y: auto;
+      }
+      .bom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+      }
+      .bom-table th,
+      .bom-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      .bom-table th {
+        background-color: #f2f2f2;
+      }
+      .loading {
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔧 CAD Companion Web API - Teste</h1>
+
+    <!-- Status Section -->
+    <div class="container">
+      <h2>📊 Status da Conexão</h2>
+      <div id="status" class="status disconnected">Verificando conexão...</div>
+      <button onclick="checkStatus()">🔄 Verificar Status</button>
+      <button onclick="reconnect()">🔌 Reconectar</button>
+    </div>
+
+    <!-- Open Assemblies Section -->
+    <div class="container">
+      <h2>📂 Assemblies Abertos</h2>
+      <button onclick="listOpenAssemblies()">📋 Listar Assemblies</button>
+      <div id="openAssemblies" class="result"></div>
+    </div>
+
+    <!-- Extract BOM from File -->
+    <div class="container">
+      <h2>📋 Extrair BOM de Arquivo</h2>
+      <input
+        type="text"
+        id="filePath"
+        class="file-input"
+        placeholder="C:\path\to\your\assembly.iam"
+        value="C:\Temp\motor.iam"
+      />
+      <br />
+      <button onclick="extractBOMFromFile()">🔍 Extrair BOM</button>
+      <div id="bomFromFile" class="result"></div>
+    </div>
+
+    <!-- Extract BOM from Open Assembly -->
+    <div class="container">
+      <h2>📋 Extrair BOM de Assembly Aberto</h2>
+      <input
+        type="text"
+        id="openFileName"
+        class="file-input"
+        placeholder="motor.iam"
+        value="motor.iam"
+      />
+      <br />
+      <button onclick="extractBOMFromOpen()">🔍 Extrair BOM (Aberto)</button>
+      <div id="bomFromOpen" class="result"></div>
+    </div>
+
+    <!-- Open File -->
+    <div class="container">
+      <h2>📂 Abrir Arquivo no Inventor</h2>
+      <input
+        type="text"
+        id="openFilePath"
+        class="file-input"
+        placeholder="C:\path\to\your\assembly.iam"
+        value="C:\Temp\motor.iam"
+      />
+      <br />
+      <button onclick="openFile()">📂 Abrir Arquivo</button>
+      <div id="openFileResult" class="result"></div>
+    </div>
+
+    <script>
+      const API_BASE = "http://localhost:5000/api/bom";
+
+      // Verificar status automaticamente ao carregar
+      window.onload = () => {
+        checkStatus();
+      };
+
+      async function makeRequest(endpoint, options = {}) {
+        try {
+          const response = await fetch(`${API_BASE}${endpoint}`, {
+            headers: {
+              "Content-Type": "application/json",
+              ...options.headers,
+            },
+            ...options,
+          });
+
+          const data = await response.json();
+          return { success: response.ok, data };
+        } catch (error) {
+          return { success: false, error: error.message };
+        }
+      }
+
+      async function checkStatus() {
+        const statusElement = document.getElementById("status");
+        statusElement.textContent = "Verificando...";
+        statusElement.className = "status";
+
+        const result = await makeRequest("/status");
+
+        if (result.success && result.data) {
+          const { inventorRunning, inventorVersion, companionId, timestamp } =
+            result.data;
+
+          if (inventorRunning) {
+            statusElement.className = "status connected";
+            statusElement.innerHTML = `
+                        ✅ <strong>CONECTADO</strong><br>
+                        Inventor: ${inventorVersion}<br>
+                        Companion ID: ${companionId}<br>
+                        Última verificação: ${new Date(
+                          timestamp
+                        ).toLocaleString()}
+                    `;
+          } else {
+            statusElement.className = "status disconnected";
+            statusElement.innerHTML = `
+                        ❌ <strong>DESCONECTADO</strong><br>
+                        ${result.data.error || "Inventor não está rodando"}<br>
+                        Última verificação: ${new Date(
+                          timestamp
+                        ).toLocaleString()}
+                    `;
+          }
+        } else {
+          statusElement.className = "status disconnected";
+          statusElement.textContent = `❌ Erro: ${
+            result.error || "Companion não acessível"
+          }`;
+        }
+      }
+
+      async function reconnect() {
+        const result = await makeRequest("/reconnect", { method: "POST" });
+
+        if (result.success) {
+          alert("✅ Reconexão realizada com sucesso!");
+          checkStatus();
+        } else {
+          alert(`❌ Erro na reconexão: ${result.error}`);
+        }
+      }
+
+      async function listOpenAssemblies() {
+        const element = document.getElementById("openAssemblies");
+        element.textContent = "Carregando assemblies...";
+        element.className = "result loading";
+
+        const result = await makeRequest("/open-assemblies");
+        element.className = "result";
+
+        if (result.success && result.data) {
+          const { assemblies, totalCount } = result.data;
+
+          if (totalCount === 0) {
+            element.textContent = "📭 Nenhum assembly aberto no Inventor";
+          } else {
+            let html = `<strong>📂 ${totalCount} assemblies abertos:</strong>\n\n`;
+            assemblies.forEach((assembly, index) => {
+              html += `${index + 1}. ${assembly.fileName}\n`;
+              html += `   📍 ${assembly.filePath}\n`;
+              html += `   ${assembly.isActive ? "🟢 Ativo" : "⚪ Inativo"}\n\n`;
+            });
+            element.textContent = html;
+          }
+        } else {
+          element.textContent = `❌ Erro: ${result.error}`;
+        }
+      }
+
+      async function extractBOMFromFile() {
+        const filePath = document.getElementById("filePath").value;
+        const element = document.getElementById("bomFromFile");
+
+        if (!filePath.trim()) {
+          alert("⚠️ Digite o caminho do arquivo");
+          return;
+        }
+
+        element.textContent = "Extraindo BOM...";
+        element.className = "result loading";
+
+        const result = await makeRequest("/extract", {
+          method: "POST",
+          body: JSON.stringify({ filePath }),
+        });
+
+        element.className = "result";
+
+        if (result.success && result.data) {
+          const { bomData, totalItems, fileName, extractedAt } = result.data;
+          displayBOMResults(
+            element,
+            bomData,
+            totalItems,
+            fileName,
+            extractedAt
+          );
+        } else {
+          element.textContent = `❌ Erro: ${result.error}`;
+        }
+      }
+
+      async function extractBOMFromOpen() {
+        const fileName = document.getElementById("openFileName").value;
+        const element = document.getElementById("bomFromOpen");
+
+        if (!fileName.trim()) {
+          alert("⚠️ Digite o nome do arquivo");
+          return;
+        }
+
+        element.textContent = "Extraindo BOM...";
+        element.className = "result loading";
+
+        const result = await makeRequest("/extract-from-open", {
+          method: "POST",
+          body: JSON.stringify({ fileName }),
+        });
+
+        element.className = "result";
+
+        if (result.success && result.data) {
+          const {
+            bomData,
+            totalItems,
+            fileName: resultFileName,
+            extractedAt,
+          } = result.data;
+          displayBOMResults(
+            element,
+            bomData,
+            totalItems,
+            resultFileName,
+            extractedAt
+          );
+        } else {
+          element.textContent = `❌ Erro: ${result.error}`;
+        }
+      }
+
+      async function openFile() {
+        const filePath = document.getElementById("openFilePath").value;
+        const element = document.getElementById("openFileResult");
+
+        if (!filePath.trim()) {
+          alert("⚠️ Digite o caminho do arquivo");
+          return;
+        }
+
+        element.textContent = "Abrindo arquivo...";
+        element.className = "result loading";
+
+        const result = await makeRequest("/open-file", {
+          method: "POST",
+          body: JSON.stringify({ filePath }),
+        });
+
+        element.className = "result";
+
+        if (result.success && result.data) {
+          element.textContent = `✅ ${result.data.message}\n📍 ${result.data.filePath}`;
+        } else {
+          element.textContent = `❌ Erro: ${result.error}`;
+        }
+      }
+
+      function displayBOMResults(
+        element,
+        bomData,
+        totalItems,
+        fileName,
+        extractedAt
+      ) {
+        let html = `✅ <strong>BOM Extraída com Sucesso!</strong>\n`;
+        html += `📄 Arquivo: ${fileName}\n`;
+        html += `📊 Total de itens: ${totalItems}\n`;
+        html += `⏰ Extraído em: ${new Date(extractedAt).toLocaleString()}\n\n`;
+
+        if (bomData && bomData.length > 0) {
+          html += `<strong>📋 Lista de Materiais:</strong>\n\n`;
+          bomData.forEach((item, index) => {
+            html += `${index + 1}. ${item.partNumber || "N/A"}\n`;
+            html += `   📝 ${item.description || "Sem descrição"}\n`;
+            html += `   📦 Qtd: ${item.quantity || 0} ${item.unit || "UN"}\n`;
+            if (item.material) html += `   🔧 Material: ${item.material}\n`;
+            if (item.mass) html += `   ⚖️ Massa: ${item.mass.toFixed(3)} kg\n`;
+            html += `   📁 Nível: ${item.level || 0}\n\n`;
+          });
+        }
+
+        element.textContent = html;
+      }
+    </script>
+  </body>
+</html>

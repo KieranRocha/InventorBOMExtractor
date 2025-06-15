@@ -7,17 +7,33 @@ using OfficeOpenXml; // Certifique-se de que o pacote NuGet 'EPPlus' está insta
 
 namespace InventorBOMExtractor
 {
-    
-        
-
-        
-    // Classe para representar uma montagem disponível
+    // Classe para representar uma montagem disponível (mantida para compatibilidade)
     public class AssemblyInfo
     {
         public string DisplayName { get; set; } = "";
         public string FullPath { get; set; } = "";
         public bool IsActive { get; set; } = false;
         public dynamic Document { get; set; } = null!;
+    }
+
+    // ===== NOVAS CLASSES PARA WEB API =====
+    public class OpenAssemblyInfo
+    {
+        public string FileName { get; set; } = "";
+        public string FilePath { get; set; } = "";
+        public bool IsActive { get; set; }
+        public bool IsSaved { get; set; }
+        public string DocumentType { get; set; } = "";
+    }
+
+    public class ActiveDocumentInfo
+    {
+        public string FileName { get; set; } = "";
+        public string FilePath { get; set; } = "";
+        public string DocumentType { get; set; } = "";
+        public bool IsSaved { get; set; }
+        public bool IsAssembly { get; set; }
+        public DateTime? LastSaved { get; set; }
     }
 
     // Classe COM Helper (mesma de antes)
@@ -114,9 +130,9 @@ namespace InventorBOMExtractor
                 throw new InvalidOperationException($"Falha total ao conectar ou criar instância do Inventor: {ex.Message}");
             }
             if (_inventorApp != null)
-        {
-            Console.WriteLine($"✓ Inventor conectado - Versão: {GetInventorVersion()}");
-        }
+            {
+                Console.WriteLine($"✓ Inventor conectado - Versão: {GetInventorVersion()}");
+            }
         }
 
         public List<AssemblyInfo> ListAvailableAssemblies()
@@ -282,6 +298,272 @@ namespace InventorBOMExtractor
                 }
             }
         }
+
+        // ===== NOVOS MÉTODOS PARA WEB API =====
+
+        /// <summary>
+        /// Lista todos os assemblies atualmente abertos no Inventor
+        /// </summary>
+        public List<OpenAssemblyInfo> ListOpenAssemblies()
+        {
+            var assemblies = new List<OpenAssemblyInfo>();
+
+            try
+            {
+                if (_inventorApp?.Documents == null)
+                {
+                    Console.WriteLine("❌ Inventor não conectado ou sem documentos");
+                    return assemblies;
+                }
+
+                Console.WriteLine($"🔍 Verificando {_inventorApp.Documents.Count} documentos abertos...");
+
+                for (int i = 1; i <= _inventorApp.Documents.Count; i++)
+                {
+                    try
+                    {
+                        dynamic doc = _inventorApp.Documents[i];
+                        int docType = doc.DocumentType;
+
+                        // kAssemblyDocumentObject = 12291
+                        if (docType == 12291)
+                        {
+                            var assemblyInfo = new OpenAssemblyInfo
+                            {
+                                FileName = doc.DisplayName,
+                                FilePath = doc.FullFileName ?? doc.DisplayName,
+                                IsActive = doc == _inventorApp.ActiveDocument,
+                                IsSaved = !doc.Dirty,
+                                DocumentType = "Assembly (.iam)"
+                            };
+
+                            assemblies.Add(assemblyInfo);
+                            Console.WriteLine($"  ✅ Assembly encontrado: {assemblyInfo.FileName} {(assemblyInfo.IsActive ? "[ATIVO]" : "")}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"  🔍 Documento encontrado, mas não é assembly (Tipo: {docType}): {doc.DisplayName}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"  ⚠️ Erro ao processar documento {i}: {ex.Message}");
+                    }
+                }
+
+                Console.WriteLine($"📦 Total de assemblies encontrados: {assemblies.Count}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Erro ao listar assemblies abertos: {ex.Message}");
+            }
+
+            return assemblies;
+        }
+
+        /// <summary>
+        /// Extrai BOM de um assembly específico que já está aberto
+        /// </summary>
+        public List<BomItem> GetBOMFromOpenAssembly(string fileName)
+        {
+            try
+            {
+                if (_inventorApp?.Documents == null)
+                {
+                    throw new InvalidOperationException("Inventor não conectado.");
+                }
+
+                Console.WriteLine($"🔍 Procurando assembly aberto: {fileName}");
+
+                // Procurar o documento pelo nome
+                for (int i = 1; i <= _inventorApp.Documents.Count; i++)
+                {
+                    try
+                    {
+                        dynamic doc = _inventorApp.Documents[i];
+                        
+                        // Verificar se é o arquivo que estamos procurando
+                        if (doc.DisplayName.Equals(fileName, StringComparison.OrdinalIgnoreCase) ||
+                            Path.GetFileName(doc.FullFileName ?? "").Equals(fileName, StringComparison.OrdinalIgnoreCase))
+                        {
+                            int docType = doc.DocumentType;
+                            
+                            // Verificar se é assembly
+                            if (docType == 12291) // kAssemblyDocumentObject
+                            {
+                                Console.WriteLine($"✅ Assembly encontrado e ativo: {doc.DisplayName}");
+                                return GetBOMFromDocument(doc);
+                            }
+                            else
+                            {
+                                throw new InvalidOperationException($"Documento '{fileName}' não é um assembly (tipo: {docType})");
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"⚠️ Erro ao verificar documento {i}: {ex.Message}");
+                    }
+                }
+
+                throw new FileNotFoundException($"Assembly '{fileName}' não encontrado nos documentos abertos.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Erro ao extrair BOM de assembly aberto: {ex.Message}");
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Abre um arquivo no Inventor
+        /// </summary>
+        public bool OpenDocument(string filePath)
+        {
+            try
+            {
+                if (_inventorApp == null)
+                {
+                    throw new InvalidOperationException("Inventor não conectado.");
+                }
+
+                if (!File.Exists(filePath))
+                {
+                    throw new FileNotFoundException($"Arquivo não encontrado: {filePath}");
+                }
+
+                Console.WriteLine($"📂 Abrindo documento: {filePath}");
+
+                // Verificar se já está aberto
+                for (int i = 1; i <= _inventorApp.Documents.Count; i++)
+                {
+                    try
+                    {
+                        dynamic doc = _inventorApp.Documents[i];
+                        if (doc.FullFileName?.Equals(filePath, StringComparison.OrdinalIgnoreCase) == true)
+                        {
+                            Console.WriteLine($"✅ Documento já está aberto: {doc.DisplayName}");
+                            
+                            // Ativar o documento
+                            _inventorApp.ActiveDocument = doc;
+                            return true;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"⚠️ Erro ao verificar documento aberto {i}: {ex.Message}");
+                    }
+                }
+
+                // Abrir novo documento
+                dynamic openedDoc = _inventorApp.Documents.Open(filePath, true); // true = visível
+                
+                Console.WriteLine($"✅ Documento aberto com sucesso: {openedDoc.DisplayName}");
+                
+                // Trazer Inventor para frente
+                _inventorApp.Visible = true;
+                
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Erro ao abrir documento: {ex.Message}");
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Ativa um documento específico que já está aberto
+        /// </summary>
+        public bool ActivateDocument(string fileName)
+        {
+            try
+            {
+                if (_inventorApp?.Documents == null)
+                {
+                    throw new InvalidOperationException("Inventor não conectado.");
+                }
+
+                Console.WriteLine($"🎯 Ativando documento: {fileName}");
+
+                for (int i = 1; i <= _inventorApp.Documents.Count; i++)
+                {
+                    try
+                    {
+                        dynamic doc = _inventorApp.Documents[i];
+                        
+                        if (doc.DisplayName.Equals(fileName, StringComparison.OrdinalIgnoreCase) ||
+                            Path.GetFileName(doc.FullFileName ?? "").Equals(fileName, StringComparison.OrdinalIgnoreCase))
+                        {
+                            _inventorApp.ActiveDocument = doc;
+                            _inventorApp.Visible = true;
+                            
+                            Console.WriteLine($"✅ Documento ativado: {doc.DisplayName}");
+                            return true;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"⚠️ Erro ao verificar documento {i}: {ex.Message}");
+                    }
+                }
+
+                throw new FileNotFoundException($"Documento '{fileName}' não encontrado nos documentos abertos.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Erro ao ativar documento: {ex.Message}");
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Obtém informações detalhadas sobre o documento ativo
+        /// </summary>
+        public ActiveDocumentInfo? GetActiveDocumentInfo()
+        {
+            try
+            {
+                if (_inventorApp?.ActiveDocument == null)
+                {
+                    return null;
+                }
+
+                dynamic activeDoc = _inventorApp.ActiveDocument;
+                
+                return new ActiveDocumentInfo
+                {
+                    FileName = activeDoc.DisplayName,
+                    FilePath = activeDoc.FullFileName ?? activeDoc.DisplayName,
+                    DocumentType = GetDocumentTypeName(activeDoc.DocumentType),
+                    IsSaved = !activeDoc.Dirty,
+                    IsAssembly = activeDoc.DocumentType == 12291,
+                    LastSaved = File.Exists(activeDoc.FullFileName) ? File.GetLastWriteTime(activeDoc.FullFileName) : (DateTime?)null
+                };
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Erro ao obter informações do documento ativo: {ex.Message}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Converte tipo numérico do documento em nome legível
+        /// </summary>
+        private string GetDocumentTypeName(int documentType)
+        {
+            return documentType switch
+            {
+                12290 => "Part (.ipt)",           // kPartDocumentObject
+                12291 => "Assembly (.iam)",       // kAssemblyDocumentObject
+                12292 => "Drawing (.idw/.dwg)",   // kDrawingDocumentObject
+                12293 => "Presentation (.ipn)",   // kPresentationDocumentObject
+                _ => $"Unknown ({documentType})"
+            };
+        }
+
+        // ===== MÉTODOS ORIGINAIS MANTIDOS =====
 
         private List<BomItem> ExtractBOM(dynamic assemblyDoc)
         {
@@ -601,6 +883,7 @@ namespace InventorBOMExtractor
 
             package.SaveAs(new FileInfo(filePath));
         }
+
         public string? GetInventorVersion()
         {
             try
@@ -617,44 +900,43 @@ namespace InventorBOMExtractor
             }
         }
 
-    public dynamic? GetInventorApp()
-    {
-        try
+        public dynamic? GetInventorApp()
         {
-            // Retorna a aplicação Inventor para subscrição de eventos
-            if (_inventorApp != null)
+            try
             {
+                // Retorna a aplicação Inventor para subscrição de eventos
+                if (_inventorApp != null)
+                {
+                    return _inventorApp;
+                }
+                
+                // Se não existe, tenta conectar
+                ConnectToInventor();
                 return _inventorApp;
             }
-            
-            // Se não existe, tenta conectar
-            ConnectToInventor();
-            return _inventorApp;
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao obter aplicação Inventor: {ex.Message}");
+                return null;
+            }
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Erro ao obter aplicação Inventor: {ex.Message}");
-            return null;
-        }
-    }
 
-    // ✅ ADICIONAR - Verifica se aplicação está válida
-    public bool IsInventorAppValid()
-    {
-        try
+        // ✅ ADICIONAR - Verifica se aplicação está válida
+        public bool IsInventorAppValid()
         {
-            if (_inventorApp == null) return false;
-            
-            // Testa acesso simples para verificar se ainda está válida
-            var version = _inventorApp.SoftwareVersion;
-            return version != null;
+            try
+            {
+                if (_inventorApp == null) return false;
+                
+                // Testa acesso simples para verificar se ainda está válida
+                var version = _inventorApp.SoftwareVersion;
+                return version != null;
+            }
+            catch
+            {
+                return false;
+            }
         }
-        catch
-        {
-            return false;
-        }
-    }
-
     }
 
     public class BomItem
