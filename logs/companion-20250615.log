@@ -1516,3 +1516,25 @@ System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a 
 2025-06-15 20:50:03.335 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 1.4058ms
 2025-06-15 20:50:03.336 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
 2025-06-15 20:50:03.337 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 13.5822ms
+2025-06-15 20:50:34.276 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:50:34.278 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:50:34.279 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.2967ms
+2025-06-15 20:50:34.281 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:50:34.283 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:50:34.284 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:50:34.305 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:50:34.306 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:50:34.313 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 1.647ms
+2025-06-15 20:50:34.317 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:50:34.319 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 37.3132ms
+2025-06-15 20:51:04.278 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:51:04.279 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:51:04.280 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.2712ms
+2025-06-15 20:51:04.283 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:51:04.285 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:51:04.287 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:51:04.288 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:51:04.290 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:51:04.296 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 5.6656ms
+2025-06-15 20:51:04.297 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:51:04.299 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 15.7159ms
