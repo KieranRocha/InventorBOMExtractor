@@ -1538,3 +1538,392 @@ System.Net.Http.HttpRequestException: Nenhuma conexão pôde ser feita porque a 
 2025-06-15 20:51:04.296 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 5.6656ms
 2025-06-15 20:51:04.297 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
 2025-06-15 20:51:04.299 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 15.7159ms
+2025-06-15 20:52:05.273 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:52:05.275 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:52:05.275 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.7419ms
+2025-06-15 20:52:05.278 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:52:05.280 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:52:05.282 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:52:05.283 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:52:05.285 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:52:05.287 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 1.3919ms
+2025-06-15 20:52:05.288 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:52:05.289 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 10.5759ms
+2025-06-15 20:52:33.281 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:52:33.286 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:52:33.287 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 5.8543ms
+2025-06-15 20:52:33.332 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:52:33.333 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:52:33.334 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:52:33.335 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:52:33.336 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:52:33.337 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 1.5581ms
+2025-06-15 20:52:33.339 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:52:33.342 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 10.4663ms
+2025-06-15 20:53:04.276 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:53:04.278 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:53:04.279 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.5101ms
+2025-06-15 20:53:04.282 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:53:04.284 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:53:04.285 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:53:04.286 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:53:04.287 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:53:04.294 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 6.7814ms
+2025-06-15 20:53:04.297 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:53:04.297 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 15.5258ms
+2025-06-15 20:53:34.273 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:53:34.275 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:53:34.276 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.8755ms
+2025-06-15 20:53:34.279 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:53:34.280 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:53:34.281 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:53:34.283 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:53:34.285 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:53:34.288 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 2.8975ms
+2025-06-15 20:53:34.291 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:53:34.292 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 13.3634ms
+2025-06-15 20:54:09.278 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:54:09.281 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:54:09.282 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 3.5668ms
+2025-06-15 20:54:09.284 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:54:09.286 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:54:09.299 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:54:09.301 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:54:09.303 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:54:09.313 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 10.4495ms
+2025-06-15 20:54:09.315 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:54:09.316 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 31.8432ms
+2025-06-15 20:55:09.279 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+2025-06-15 20:55:09.284 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:55:09.285 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 5.5252ms
+2025-06-15 20:55:09.293 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+2025-06-15 20:55:09.296 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:55:09.296 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:55:09.297 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:55:09.299 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:55:09.300 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 1.2314ms
+2025-06-15 20:55:09.302 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:55:09.305 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 12.1454ms
+2025-06-15 20:55:50.956 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/status - null null
+2025-06-15 20:55:50.957 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - null null
+2025-06-15 20:55:50.959 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:55:50.962 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/status - 204 null null 5.425ms
+2025-06-15 20:55:50.960 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:55:50.964 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/BOM/status - application/json null
+2025-06-15 20:55:50.965 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - 204 null null 7.6701ms
+2025-06-15 20:55:50.966 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:55:50.970 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - application/json null
+2025-06-15 20:55:50.973 -03:00 [INF] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:55:50.978 -03:00 [INF] CORS policy execution successful.
+2025-06-15 20:55:50.982 -03:00 [INF] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+2025-06-15 20:55:50.985 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - 404 0 null 15.24ms
+2025-06-15 20:55:51.000 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 20:55:51.023 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/api/BOM/open-assemblies, Response status code: 404
+2025-06-15 20:55:51.030 -03:00 [INF] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 30.0237ms
+2025-06-15 20:55:51.039 -03:00 [INF] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+2025-06-15 20:55:51.040 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/BOM/status - 200 null application/json; charset=utf-8 76.2887ms
+2025-06-15 20:55:58.079 -03:00 [INF] Application is shutting down...
+2025-06-15 20:55:58.096 -03:00 [INF] 🔴 Companion Service parando...
+2025-06-15 20:55:58.099 -03:00 [INF] 🔴 Work-Driven Monitoring parando...
+2025-06-15 20:55:58.103 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-15 20:55:58.106 -03:00 [INF] Service cancelado - parando...
+2025-06-15 20:55:58.107 -03:00 [INF] 🔴 Work-Driven Monitoring parando...
+2025-06-15 20:55:58.110 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-15 20:55:58.111 -03:00 [INF] ✅ Work-Driven Monitoring parado
+2025-06-15 20:55:58.113 -03:00 [INF] ✅ Companion Service parado
+[2025-06-15 20:56:52.154 -03:00] [INF] [] === COMPANION SERVICE + WEB API INICIANDO ===
+[2025-06-15 20:56:52.203 -03:00] [INF] [] 🌐 Modo WEB API + SERVICE
+[2025-06-15 20:56:52.409 -03:00] [INF] [] 🌐 Web API iniciada em http://localhost:5000
+[2025-06-15 20:56:52.410 -03:00] [INF] [] 📋 Swagger UI: http://localhost:5000/swagger
+[2025-06-15 20:56:52.411 -03:00] [INF] [] 🏥 Health Check: http://localhost:5000/health
+[2025-06-15 20:56:52.447 -03:00] [INF] [InventorBOMExtractor.Services.CompanionWorkerService] 🚀 Companion Service STEP 2 INICIANDO...
+[2025-06-15 20:56:52.449 -03:00] [INF] [InventorBOMExtractor.Services.CompanionWorkerService] Configurações: API=https://localhost:5001, Interval=30000ms
+[2025-06-15 20:56:52.536 -03:00] [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+[2025-06-15 20:56:52.538 -03:00] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2025-06-15 20:56:52.539 -03:00] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Production
+[2025-06-15 20:56:52.539 -03:00] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\kiera\OneDrive\Pessoal\ultra\InventorBOMExtractor
+[2025-06-15 20:56:55.453 -03:00] [INF] [InventorBOMExtractor.Services.CompanionWorkerService] Realizando conexão inicial com o Inventor...
+[2025-06-15 20:56:55.455 -03:00] [INF] [InventorBOMExtractor.Services.CompanionWorkerService] Tentando conectar ao Inventor...
+[2025-06-15 20:56:55.457 -03:00] [INF] [InventorBOMExtractor.Services.InventorConnectionService] Tentando conectar ao Inventor...
+[2025-06-15 20:56:55.684 -03:00] [INF] [InventorBOMExtractor.Services.InventorConnectionService] ✓ Conectado ao Inventor 2023
+[2025-06-15 20:56:55.685 -03:00] [INF] [InventorBOMExtractor.Services.CompanionWorkerService] ✅ Conexão com Inventor estabelecida. Iniciando serviços dependentes...
+[2025-06-15 20:56:55.687 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 Work-Driven Monitoring iniciando...
+[2025-06-15 20:56:55.689 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 🔄 Iniciando monitoramento via polling (mais confiável que eventos COM)
+[2025-06-15 20:56:55.708 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 🔍 Detectando 0 documentos já abertos
+[2025-06-15 20:56:55.711 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] ✅ Monitoring de documentos ativo via polling
+[2025-06-15 20:56:55.712 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Work-Driven Monitoring ativo - aguardando atividade...
+[2025-06-15 20:56:55.712 -03:00] [INF] [InventorBOMExtractor.Services.CompanionWorkerService] ✅ Work-Driven Monitoring iniciado com sucesso.
+[2025-06-15 20:56:55.713 -03:00] [INF] [InventorBOMExtractor.Services.CompanionWorkerService] === COMPANION SERVICE EXECUTANDO ===
+[2025-06-15 20:57:03.798 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+[2025-06-15 20:57:03.917 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 121.4932ms
+[2025-06-15 20:57:03.974 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+[2025-06-15 20:57:03.974 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+[2025-06-15 20:57:03.974 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.css - null null
+[2025-06-15 20:57:03.974 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+[2025-06-15 20:57:03.974 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.js - null null
+[2025-06-15 20:57:03.989 -03:00] [INF] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+[2025-06-15 20:57:03.994 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.js - 200 null application/javascript;charset=utf-8 19.5283ms
+[2025-06-15 20:57:03.996 -03:00] [INF] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2025-06-15 20:57:03.996 -03:00] [INF] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2025-06-15 20:57:03.997 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.css - 200 202 text/css 23.77ms
+[2025-06-15 20:57:04.002 -03:00] [INF] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2025-06-15 20:57:04.006 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 32.3147ms
+[2025-06-15 20:57:04.006 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 154949 text/css 32.4369ms
+[2025-06-15 20:57:04.011 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1485241 text/javascript 37.5013ms
+[2025-06-15 20:57:04.390 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+[2025-06-15 20:57:04.469 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.2863ms
+[2025-06-15 20:57:04.514 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+[2025-06-15 20:57:04.517 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:04.520 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 6.6814ms
+[2025-06-15 20:57:04.524 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+[2025-06-15 20:57:04.526 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:04.543 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:57:04.551 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:57:04.557 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:57:04.573 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 16.967ms
+[2025-06-15 20:57:04.574 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:57:04.576 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 52.3958ms
+[2025-06-15 20:57:16.471 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/status - null null
+[2025-06-15 20:57:16.472 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - null null
+[2025-06-15 20:57:16.474 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:16.475 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:16.477 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/status - 204 null null 6.1154ms
+[2025-06-15 20:57:16.477 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - 204 null null 5.678ms
+[2025-06-15 20:57:16.480 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - application/json null
+[2025-06-15 20:57:16.482 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/BOM/status - application/json null
+[2025-06-15 20:57:16.484 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:16.488 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:16.492 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:57:16.492 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor)'
+[2025-06-15 20:57:16.493 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:57:16.495 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:57:16.496 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOpenAssemblies", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetOpenAssemblies() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:57:16.497 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 1.9211ms
+[2025-06-15 20:57:16.498 -03:00] [INF] [InventorBOMExtractor.Controllers.BOMController] 📂 Listando assemblies abertos no Inventor
+[2025-06-15 20:57:16.498 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:57:16.500 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/BOM/status - 200 null application/json; charset=utf-8 18.041ms
+[2025-06-15 20:57:16.518 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType6`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], InventorBOMExtractor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:57:16.530 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor) in 32.187ms
+[2025-06-15 20:57:16.532 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor)'
+[2025-06-15 20:57:16.533 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - 200 null application/json; charset=utf-8 52.8435ms
+[2025-06-15 20:57:31.440 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345385.iam
+[2025-06-15 20:57:31.442 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345385.iam
+[2025-06-15 20:57:31.444 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345385.iam
+[2025-06-15 20:57:31.447 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345385.iam (ID: 9ecc6634-c494-4a5a-9bf3-6aaa731ec279)
+[2025-06-15 20:57:31.449 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345385.iam (Projeto: UNKNOWN) - Total: 1 watchers
+[2025-06-15 20:57:31.607 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 089277.ipt
+[2025-06-15 20:57:31.608 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 089277.ipt
+[2025-06-15 20:57:31.609 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\089277.ipt
+[2025-06-15 20:57:31.610 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 089277.ipt (ID: a6943dfc-a7f7-40ff-bd3f-fe7236c677b8)
+[2025-06-15 20:57:31.610 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 089277.ipt (Projeto: UNKNOWN) - Total: 2 watchers
+[2025-06-15 20:57:31.637 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0313902.ipt
+[2025-06-15 20:57:31.638 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0313902.ipt
+[2025-06-15 20:57:31.638 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0313902.ipt
+[2025-06-15 20:57:31.640 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0313902.ipt (ID: c7a2ba02-dce0-4403-8160-3d35ae2ac4db)
+[2025-06-15 20:57:31.640 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0313902.ipt (Projeto: UNKNOWN) - Total: 3 watchers
+[2025-06-15 20:57:31.650 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: UNI 5589 M16
+[2025-06-15 20:57:31.652 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: UNI 5589 M16
+[2025-06-15 20:57:31.653 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\UNI 5589 - M16 - 2.IPT
+[2025-06-15 20:57:31.654 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: UNI 5589 M16 (ID: 3c709b1f-5a6a-48ab-821e-6817eed5ecc3)
+[2025-06-15 20:57:31.654 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: UNI 5589 M16 (Projeto: UNKNOWN) - Total: 4 watchers
+[2025-06-15 20:57:31.677 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345580.ipt
+[2025-06-15 20:57:31.678 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345580.ipt
+[2025-06-15 20:57:31.679 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345580.ipt
+[2025-06-15 20:57:31.680 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345580.ipt (ID: 10f27f5d-c676-4495-a4ee-54eaf59db1d2)
+[2025-06-15 20:57:31.681 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345580.ipt (Projeto: UNKNOWN) - Total: 5 watchers
+[2025-06-15 20:57:31.757 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345709.ipt
+[2025-06-15 20:57:31.757 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345709.ipt
+[2025-06-15 20:57:31.758 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345709.ipt
+[2025-06-15 20:57:31.759 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345709.ipt (ID: d7cb975f-cf8d-41c7-8b18-77e52db42a61)
+[2025-06-15 20:57:31.760 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345709.ipt (Projeto: UNKNOWN) - Total: 6 watchers
+[2025-06-15 20:57:31.781 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345710.ipt
+[2025-06-15 20:57:31.782 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345710.ipt
+[2025-06-15 20:57:31.783 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345710.ipt
+[2025-06-15 20:57:31.785 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345710.ipt (ID: 460b641f-fec7-4b6c-aef1-55e730e55097)
+[2025-06-15 20:57:31.786 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345710.ipt (Projeto: UNKNOWN) - Total: 7 watchers
+[2025-06-15 20:57:31.812 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345707.ipt
+[2025-06-15 20:57:31.812 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345707.ipt
+[2025-06-15 20:57:31.813 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345707.ipt
+[2025-06-15 20:57:31.814 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345707.ipt (ID: 05f0cf2c-1492-4a95-b376-d64d8caaccb6)
+[2025-06-15 20:57:31.815 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345707.ipt (Projeto: UNKNOWN) - Total: 8 watchers
+[2025-06-15 20:57:31.840 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345708.ipt
+[2025-06-15 20:57:31.841 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345708.ipt
+[2025-06-15 20:57:31.842 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345708.ipt
+[2025-06-15 20:57:31.843 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345708.ipt (ID: ef89e577-9512-4f98-9677-7a27200cee6a)
+[2025-06-15 20:57:31.844 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345708.ipt (Projeto: UNKNOWN) - Total: 9 watchers
+[2025-06-15 20:57:31.874 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345536.ipt
+[2025-06-15 20:57:31.875 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345536.ipt
+[2025-06-15 20:57:31.876 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345536.ipt
+[2025-06-15 20:57:31.877 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345536.ipt (ID: 4a09e139-2ee7-41bd-b173-467828df3aaf)
+[2025-06-15 20:57:31.877 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345536.ipt (Projeto: UNKNOWN) - Total: 10 watchers
+[2025-06-15 20:57:31.910 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345538.ipt
+[2025-06-15 20:57:31.910 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345538.ipt
+[2025-06-15 20:57:31.911 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345538.ipt
+[2025-06-15 20:57:31.912 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345538.ipt (ID: dadf9cf8-6cae-49ac-920f-ea27a41ec6c1)
+[2025-06-15 20:57:31.913 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345538.ipt (Projeto: UNKNOWN) - Total: 11 watchers
+[2025-06-15 20:57:31.943 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 088259.ipt
+[2025-06-15 20:57:31.944 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 088259.ipt
+[2025-06-15 20:57:31.945 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\088259.ipt
+[2025-06-15 20:57:31.946 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 088259.ipt (ID: 2c0f543f-97c1-4a2d-b8f1-8200ba372a65)
+[2025-06-15 20:57:31.947 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 088259.ipt (Projeto: UNKNOWN) - Total: 12 watchers
+[2025-06-15 20:57:31.978 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 111646.ipt
+[2025-06-15 20:57:31.979 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 111646.ipt
+[2025-06-15 20:57:31.979 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\111646.ipt
+[2025-06-15 20:57:31.980 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 111646.ipt (ID: 1b553e6e-0ed1-48e9-ba19-61af37e48242)
+[2025-06-15 20:57:31.981 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 111646.ipt (Projeto: UNKNOWN) - Total: 13 watchers
+[2025-06-15 20:57:32.010 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0254385.ipt
+[2025-06-15 20:57:32.011 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0254385.ipt
+[2025-06-15 20:57:32.012 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0254385.ipt
+[2025-06-15 20:57:32.013 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0254385.ipt (ID: 4e0f1161-2016-40da-b52b-0971e15983e1)
+[2025-06-15 20:57:32.013 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0254385.ipt (Projeto: UNKNOWN) - Total: 14 watchers
+[2025-06-15 20:57:32.049 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0321862.ipt
+[2025-06-15 20:57:32.049 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0321862.ipt
+[2025-06-15 20:57:32.050 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0321862.ipt
+[2025-06-15 20:57:32.052 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0321862.ipt (ID: a1ccf9e7-5e69-4a7d-a088-d588b201f0f2)
+[2025-06-15 20:57:32.053 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0321862.ipt (Projeto: UNKNOWN) - Total: 15 watchers
+[2025-06-15 20:57:32.107 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0307215.iam
+[2025-06-15 20:57:32.108 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0307215.iam
+[2025-06-15 20:57:32.109 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0307215.iam
+[2025-06-15 20:57:32.110 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0307215.iam (ID: 21c73afc-9bf8-45f9-8e5f-116b4deac5a6)
+[2025-06-15 20:57:32.110 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0307215.iam (Projeto: UNKNOWN) - Total: 16 watchers
+[2025-06-15 20:57:32.125 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: CP96SDB63-100C_1.ipt
+[2025-06-15 20:57:32.126 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: CP96SDB63-100C_1.ipt
+[2025-06-15 20:57:32.127 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\CP96SDB63-100C_1.ipt
+[2025-06-15 20:57:32.129 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: CP96SDB63-100C_1.ipt (ID: 35c573cb-9c77-43ec-b1f1-33b406a4bc0c)
+[2025-06-15 20:57:32.130 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: CP96SDB63-100C_1.ipt (Projeto: UNKNOWN) - Total: 17 watchers
+[2025-06-15 20:57:32.156 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: CP96SDB63-100C_2.ipt
+[2025-06-15 20:57:32.157 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: CP96SDB63-100C_2.ipt
+[2025-06-15 20:57:32.158 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\CP96SDB63-100C_2.ipt
+[2025-06-15 20:57:32.159 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: CP96SDB63-100C_2.ipt (ID: 2868e1b2-5849-4167-891c-54617def9260)
+[2025-06-15 20:57:32.160 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: CP96SDB63-100C_2.ipt (Projeto: UNKNOWN) - Total: 18 watchers
+[2025-06-15 20:57:32.212 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345546.ipt
+[2025-06-15 20:57:32.213 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345546.ipt
+[2025-06-15 20:57:32.214 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345546.ipt
+[2025-06-15 20:57:32.215 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345546.ipt (ID: 161c083b-4624-4bc4-9b5c-0e1900a0b616)
+[2025-06-15 20:57:32.216 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345546.ipt (Projeto: UNKNOWN) - Total: 19 watchers
+[2025-06-15 20:57:32.275 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345712.ipt
+[2025-06-15 20:57:32.275 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345712.ipt
+[2025-06-15 20:57:32.276 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345712.ipt
+[2025-06-15 20:57:32.277 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345712.ipt (ID: 45356f80-7b84-40d5-ae24-8eabee3825a3)
+[2025-06-15 20:57:32.277 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345712.ipt (Projeto: UNKNOWN) - Total: 20 watchers
+[2025-06-15 20:57:32.305 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345713.ipt
+[2025-06-15 20:57:32.306 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345713.ipt
+[2025-06-15 20:57:32.307 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345713.ipt
+[2025-06-15 20:57:32.307 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345713.ipt (ID: 68f7d031-ba1a-420a-af4a-2e64a715adb5)
+[2025-06-15 20:57:32.308 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345713.ipt (Projeto: UNKNOWN) - Total: 21 watchers
+[2025-06-15 20:57:32.333 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345711.ipt
+[2025-06-15 20:57:32.335 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345711.ipt
+[2025-06-15 20:57:32.336 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345711.ipt
+[2025-06-15 20:57:32.337 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345711.ipt (ID: 739e791b-4d30-45b6-9209-7008477c2201)
+[2025-06-15 20:57:32.338 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345711.ipt (Projeto: UNKNOWN) - Total: 22 watchers
+[2025-06-15 20:57:32.360 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345714.ipt
+[2025-06-15 20:57:32.361 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345714.ipt
+[2025-06-15 20:57:32.362 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345714.ipt
+[2025-06-15 20:57:32.363 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345714.ipt (ID: 2bfbbff7-e6a1-4fff-805c-686502949dd0)
+[2025-06-15 20:57:32.363 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345714.ipt (Projeto: UNKNOWN) - Total: 23 watchers
+[2025-06-15 20:57:32.387 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345715.ipt
+[2025-06-15 20:57:32.388 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345715.ipt
+[2025-06-15 20:57:32.389 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345715.ipt
+[2025-06-15 20:57:32.390 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345715.ipt (ID: 084479f4-576c-466c-afc7-29bc10ec81b8)
+[2025-06-15 20:57:32.390 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345715.ipt (Projeto: UNKNOWN) - Total: 24 watchers
+[2025-06-15 20:57:32.420 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345716.ipt
+[2025-06-15 20:57:32.421 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345716.ipt
+[2025-06-15 20:57:32.421 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345716.ipt
+[2025-06-15 20:57:32.422 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345716.ipt (ID: 1325d206-e019-45fe-97cc-d2ca65fb00dd)
+[2025-06-15 20:57:32.423 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345716.ipt (Projeto: UNKNOWN) - Total: 25 watchers
+[2025-06-15 20:57:32.450 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345717.ipt
+[2025-06-15 20:57:32.452 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345717.ipt
+[2025-06-15 20:57:32.453 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345717.ipt
+[2025-06-15 20:57:32.454 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345717.ipt (ID: 41633c4c-1762-49aa-bba9-f2b29e6973cd)
+[2025-06-15 20:57:32.455 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345717.ipt (Projeto: UNKNOWN) - Total: 26 watchers
+[2025-06-15 20:57:32.478 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 0345718.ipt
+[2025-06-15 20:57:32.478 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 0345718.ipt
+[2025-06-15 20:57:32.479 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0345718.ipt
+[2025-06-15 20:57:32.480 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 0345718.ipt (ID: 7c72a875-f786-4d72-9699-f82885b4719f)
+[2025-06-15 20:57:32.481 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 0345718.ipt (Projeto: UNKNOWN) - Total: 27 watchers
+[2025-06-15 20:57:32.511 -03:00] [INF] [InventorBOMExtractor.Services.InventorDocumentEventService] 📂 ABERTO: 134538.ipt
+[2025-06-15 20:57:32.512 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] 🔥 INICIANDO monitoring: 134538.ipt
+[2025-06-15 20:57:32.513 -03:00] [WRN] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ⚠️ Projeto não detectado para: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\134538.ipt
+[2025-06-15 20:57:32.516 -03:00] [INF] [InventorBOMExtractor.Services.WorkSessionService] 🚀 Work Session iniciada: 134538.ipt (ID: d3bb565b-82b9-4d6a-aa31-66cc2658329e)
+[2025-06-15 20:57:32.517 -03:00] [INF] [InventorBOMExtractor.Services.WorkDrivenMonitoringService] ✅ Monitoring ativo: 134538.ipt (Projeto: UNKNOWN) - Total: 28 watchers
+[2025-06-15 20:57:34.051 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - null null
+[2025-06-15 20:57:34.053 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:34.054 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - 204 null null 3.2218ms
+[2025-06-15 20:57:34.057 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - application/json null
+[2025-06-15 20:57:34.059 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:34.060 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor)'
+[2025-06-15 20:57:34.062 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOpenAssemblies", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetOpenAssemblies() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:57:34.063 -03:00] [INF] [InventorBOMExtractor.Controllers.BOMController] 📂 Listando assemblies abertos no Inventor
+[2025-06-15 20:57:34.272 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+[2025-06-15 20:57:34.273 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:34.274 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.3814ms
+[2025-06-15 20:57:34.276 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+[2025-06-15 20:57:34.278 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:34.279 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:57:34.279 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:57:34.281 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:57:34.282 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 1.57ms
+[2025-06-15 20:57:34.284 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:57:34.285 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 8.8432ms
+[2025-06-15 20:57:34.955 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType6`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], InventorBOMExtractor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:57:34.960 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor) in 896.4138ms
+[2025-06-15 20:57:34.961 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor)'
+[2025-06-15 20:57:34.962 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - 200 null application/json; charset=utf-8 904.8016ms
+[2025-06-15 20:57:41.304 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/extract-from-open - null null
+[2025-06-15 20:57:41.305 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:41.306 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/extract-from-open - 204 null null 2.5719ms
+[2025-06-15 20:57:41.309 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/api/BOM/extract-from-open - application/json 26
+[2025-06-15 20:57:41.312 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:57:41.313 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.ExtractBOMFromOpenAssembly (InventorBOMExtractor)'
+[2025-06-15 20:57:41.326 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "ExtractBOMFromOpenAssembly", controller = "BOM"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ExtractBOMFromOpenAssembly(InventorBOMExtractor.Controllers.ExtractFromOpenRequest) on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:57:41.357 -03:00] [INF] [InventorBOMExtractor.Controllers.BOMController] 📋 Extraindo BOM de assembly aberto: 0345385.iam
+[2025-06-15 20:57:53.377 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType8`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[InventorBOMExtractor.BomItem, InventorBOMExtractor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:57:53.390 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.ExtractBOMFromOpenAssembly (InventorBOMExtractor) in 12062.9245ms
+[2025-06-15 20:57:53.392 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.ExtractBOMFromOpenAssembly (InventorBOMExtractor)'
+[2025-06-15 20:57:53.393 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 POST http://localhost:5000/api/BOM/extract-from-open - 200 null application/json; charset=utf-8 12084.1217ms
+[2025-06-15 20:58:04.268 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+[2025-06-15 20:58:04.270 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:58:04.271 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.6401ms
+[2025-06-15 20:58:04.274 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+[2025-06-15 20:58:04.276 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:58:04.276 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:58:04.278 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:58:04.279 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:58:04.281 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 2.0242ms
+[2025-06-15 20:58:04.283 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:58:04.284 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 10.508ms
+[2025-06-15 20:58:52.233 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-file - null null
+[2025-06-15 20:58:52.235 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:58:52.236 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-file - 204 null null 2.9728ms
+[2025-06-15 20:58:52.238 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/api/BOM/open-file - application/json 94
+[2025-06-15 20:58:52.240 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:58:52.241 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.OpenFile (InventorBOMExtractor)'
+[2025-06-15 20:58:52.248 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "OpenFile", controller = "BOM"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] OpenFile(InventorBOMExtractor.Controllers.OpenFileRequest) on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:58:52.259 -03:00] [INF] [InventorBOMExtractor.Controllers.BOMController] 📂 Abrindo arquivo no Inventor: C:\Users\kiera\OneDrive\Trabalho\Manuais e OPs\C446\200.075\0313902.ipt
+[2025-06-15 20:58:54.631 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType15`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:58:54.636 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.OpenFile (InventorBOMExtractor) in 2381.6674ms
+[2025-06-15 20:58:54.638 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.OpenFile (InventorBOMExtractor)'
+[2025-06-15 20:58:54.639 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 POST http://localhost:5000/api/BOM/open-file - 200 null application/json; charset=utf-8 2400.9537ms
+[2025-06-15 20:58:54.643 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - null null
+[2025-06-15 20:58:54.644 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:58:54.646 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/BOM/open-assemblies - 204 null null 2.8862ms
+[2025-06-15 20:58:54.649 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - application/json null
+[2025-06-15 20:58:54.652 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:58:54.653 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor)'
+[2025-06-15 20:58:54.655 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOpenAssemblies", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetOpenAssemblies() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:58:54.656 -03:00] [INF] [InventorBOMExtractor.Controllers.BOMController] 📂 Listando assemblies abertos no Inventor
+[2025-06-15 20:58:55.818 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType6`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], InventorBOMExtractor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:58:55.821 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor) in 1164.7763ms
+[2025-06-15 20:58:55.822 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetOpenAssemblies (InventorBOMExtractor)'
+[2025-06-15 20:58:55.823 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/BOM/open-assemblies - 200 null application/json; charset=utf-8 1173.9663ms
+[2025-06-15 20:59:05.272 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - null null
+[2025-06-15 20:59:05.273 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:59:05.274 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/bom/status - 204 null null 2.5348ms
+[2025-06-15 20:59:05.276 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/api/bom/status - application/json null
+[2025-06-15 20:59:05.278 -03:00] [INF] [Microsoft.AspNetCore.Cors.Infrastructure.CorsService] CORS policy execution successful.
+[2025-06-15 20:59:05.279 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:59:05.280 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetStatus", controller = "BOM"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetStatus() on controller InventorBOMExtractor.Controllers.BOMController (InventorBOMExtractor).
+[2025-06-15 20:59:05.282 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`5[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-06-15 20:59:05.288 -03:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor) in 6.5206ms
+[2025-06-15 20:59:05.289 -03:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'InventorBOMExtractor.Controllers.BOMController.GetStatus (InventorBOMExtractor)'
+[2025-06-15 20:59:05.290 -03:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5000/api/bom/status - 200 null application/json; charset=utf-8 13.9757ms

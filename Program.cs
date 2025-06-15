@@ -8,6 +8,7 @@ using InventorBOMExtractor.Configuration;
 // 🆕 ADICIONAR ESTAS LINHAS
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.OpenApi.Models; // ✅ ADICIONADO PARA SWAGGER INFO
 
 namespace InventorBOMExtractor
 {
@@ -18,7 +19,8 @@ namespace InventorBOMExtractor
             // Configuração do Serilog (manter como está)
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console()
-                .WriteTo.File("logs/companion-.log", rollingInterval: Serilog.RollingInterval.Day)
+                .WriteTo.File("logs/companion-.log", rollingInterval: Serilog.RollingInterval.Day,
+                              outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz}] [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}")
                 .CreateLogger();
 
             try
@@ -53,6 +55,9 @@ namespace InventorBOMExtractor
         {
             var builder = WebApplication.CreateBuilder(args);
             
+            // Adiciona logging do Serilog ao builder do ASP.NET Core
+            builder.Host.UseSerilog();
+            
             // 🔄 CONFIGURAR SEUS SERVICES EXISTENTES
             ConfigureExistingServices(builder.Services, builder.Configuration);
             
@@ -61,38 +66,47 @@ namespace InventorBOMExtractor
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new() { 
+                c.SwaggerDoc("v1", new OpenApiInfo { 
                     Title = "CAD Companion API", 
-                    Version = "v1",
-                    Description = "API para integração com Inventor CAD"
+                    Version = "v2.0",
+                    Description = "API para integração com Autodesk Inventor. Permite extrair listas de materiais (BOM), gerenciar arquivos e monitorar atividades."
                 });
             });
             
-            // 🆕 CORS para Electron + Local Files
+            // ✅ CORREÇÃO: Política de CORS mais flexível para desenvolvimento
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("ElectronPolicy", policy =>
+                options.AddPolicy("AllowAllPolicy", policy =>
                 {
-                    policy.AllowAnyOrigin()  // 🔧 PERMITE QUALQUER ORIGIN (FILE://, NULL, ETC)
+                    policy.SetIsOriginAllowed(origin => true) // Permite qualquer origem, incluindo 'null' (file://)
                           .AllowAnyHeader()
-                          .AllowAnyMethod();
+                          .AllowAnyMethod()
+                          .AllowCredentials();
                 });
             });
 
             var app = builder.Build();
 
             // 🆕 CONFIGURAR PIPELINE WEB API
-            app.UseCors("ElectronPolicy");
+            app.UseCors("AllowAllPolicy"); // Usa a nova política
             
-            if (builder.Environment.IsDevelopment() || args.Contains("--swagger"))
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI(c =>
+            // Redirecionamento de / para /swagger
+            app.Use(async (context, next) => {
+                if (context.Request.Path == "/")
                 {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CAD Companion API v1");
-                    c.RoutePrefix = "swagger";  // Swagger será acessível em /swagger
-                });
-            }
+                    context.Response.Redirect("/swagger");
+                    return;
+                }
+                await next();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CAD Companion API v1");
+                c.RoutePrefix = "swagger"; 
+            });
+            
             app.UseRouting();
             app.MapControllers();
 
@@ -107,6 +121,8 @@ namespace InventorBOMExtractor
             Log.Information("📋 Swagger UI: http://localhost:5000/swagger");
             Log.Information("🏥 Health Check: http://localhost:5000/health");
 
+            // Roda o CompanionWorkerService em background
+            // O próprio Host já cuida de iniciar os IHostedService
             await app.RunAsync("http://localhost:5000");
         }
 
@@ -121,7 +137,7 @@ namespace InventorBOMExtractor
         // 🆕 MÉTODO PARA CONFIGURAR SEUS SERVICES EXISTENTES
         private static void ConfigureExistingServices(IServiceCollection services, IConfiguration configuration)
         {
-            // ✅ SUAS CONFIGURAÇÕES EXISTENTES (copiadas do seu Program.cs)
+            // ✅ SUAS CONFIGURAÇÕES EXISTENTES
             services.Configure<CompanionSettings>(
                 configuration.GetSection("CompanionSettings"));
 
@@ -136,9 +152,6 @@ namespace InventorBOMExtractor
 
             // ✅ HOSTED SERVICE (manter - continua rodando em background)
             services.AddHostedService<CompanionWorkerService>();
-
-            // 🆕 ADICIONAR LOGGING para controllers
-            services.AddLogging(builder => builder.AddSerilog());
         }
 
         // 🔄 SEU MÉTODO EXISTENTE (manter como está)
